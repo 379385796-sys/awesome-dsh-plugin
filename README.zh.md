@@ -1257,6 +1257,7 @@ dsh plugin --profile web add dshmarket
 - [ruaibeite/dsh-input-polish](https://github.com/ruaibeite/dsh-input-polish) — 输入框右下工具区里的 ✨ 按钮，把草稿原地改写成更清楚的请求。上下文按话题挑而不按时间取：从草稿里抽锚点（文件路径、标识符、引号文字、中文二字词），在最近消息里挑同一话题的几条，所以一个会话里夹着多个任务时不会把别的任务的目标或文件带进改写结果；提示词也明确允许模型在上下文不像时完全忽略它。改写走与人工编辑同一条可撤销路径，⌘Z 即可还原。草稿里有引用 chip（@文件、文件夹、会话）或已认领的 /命令、以及正在提交时，按钮禁用 —— 宁可不动，也不悄悄丢掉引用。
 - [ruanimal/dsh-sidebar-panel-buttons](https://github.com/ruanimal/dsh-sidebar-panel-buttons) — 把 dsh Web 侧边栏的全局面板菜单（插件、扩展管理、定时任务、IM）从竖排文字列表收起为一行 36×36 图标按钮，悬停显示名称；可在「设置 → 通用」里切回列表，选择按浏览器记忆。
 - [Rudyy898/dsh-drag-path](https://github.com/Rudyy898/dsh-drag-path) — 像 Codex/Claude 一样：拖入任意格式文件或文件夹，真实绝对路径立即插入输入框，不用一个个打字。工作区优先智能定位、大小校验、同名弹候选选择器，支持批量拖入与粘贴，兼容 Windows/macOS。
+- [ruide92/dsh-project-atlas](https://github.com/ruide92/dsh-project-atlas) — Project Atlas：本地优先的可视化工作台，把 DeepSeek Harness 的项目、技能、会话、运行状态与产出收进一张地图。
 - [Ruiming-cn/dsh-ask-in-sidebar](https://github.com/Ruiming-cn/dsh-ask-in-sidebar) — 选中助手回答中的文本，在临时右侧面板向侧边栏助手提问：基于主对话 LLM 历史快照回答，支持流式 Markdown、可折叠思考与多轮追问，不打扰主对话。
 - [Ruiming-cn/dsh-better-at](https://github.com/Ruiming-cn/dsh-better-at) — DSH Web 输入框 `@` 文件/会话引用加速：预加载索引、浏览器本地按键过滤、保留原生 mention 序列化。
 - [ruisenbai/dsh-turn-fold](https://github.com/ruisenbai/dsh-turn-fold) — 流式回复期间将推理与工具调用折叠为收起的步骤栏，回合完成后整轮收拢为一条摘要栏；步骤栏显示原生工具图标、文件名、编辑增删行数与失败计数，已完成回合从记录的 Session 事件恢复耗时、首字延迟、Token 用量、生成速度与缓存命中率，偏好由 Host 持久保存。仅改变浏览器呈现，需要 DSH 0.1.5-alpha.1。
@@ -7845,6 +7846,7 @@ dsh plugin --profile web add dshmarket
 - [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) — 远程主机隧道管理器：把 dsh web 跑在远程 Linux 服务器上（systemd 守护、免 root），本地经自动重连的 SSH 隧道访问；远程端口自动分配并在服务器登记留档，支持多人共用与 audit 审查。
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) — 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。
 - [liushQAQ/dsh-anywhere](https://github.com/liushQAQ/dsh-anywhere) — 专为 DSH iOS App 与移动端协同打造的远程连接插件，支持扫码配对、锁屏恢复与隧道管理。
+- [liyuhan7/dsh-phone-mirror](https://github.com/liyuhan7/dsh-phone-mirror) — 在 DSH 右侧栏通过 adb 投屏并反控安卓手机/平板，支持 Opus 声音转发；仅支持 Windows。
 - [lninghaha/dsh-coding-remote-kit](https://github.com/lninghaha/dsh-coding-remote-kit) — DeepSeek Harness 移动配对远程插件：双平面白名单 RPC 上的端到端加密 Companion（局域网、Tailscale，可选 Cloudflare Quick Tunnel 或自建 rendezvous）。
 - [longisland-icetea/dsh-lan-access](https://github.com/longisland-icetea/dsh-lan-access) — 可配置的 DSH Web GUI 局域网访问：设置页开启后绑定全部网卡，只信任你配置的访问地址，可调整浏览器会话有效期或去掉 token 登录，并修复非回环访问时的设置层。
 - [loveXbanshee/dsh-fleet](https://github.com/loveXbanshee/dsh-fleet) — DeepSeek Harness 多机指挥台：用一个本地 dsh 页面管理多台远程 dsh——实时查看远程忙闲、免切标签页原地切换与使用、远程页面保活秒开、跨设备读取历史会话、一键刷新/重启，并支持控制端/被控端角色。
