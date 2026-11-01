@@ -268,6 +268,7 @@ dsh plugin --profile web add dshmarket
 - [Andor-Z/dsh-turn-outline](https://github.com/Andor-Z/dsh-turn-outline) — 在侧边栏按用户轮次折叠会话（输入、工具步骤、输出），一键跳回对话原位。
 - [androidly/dsh-restart-control](https://github.com/androidly/dsh-restart-control) — 在 DSH Web 侧边栏底部添加重启控件：宿主经自身的优雅退出通道退出，由检测到的进程守护（systemd、Kubernetes 或 Docker）拉起新进程，没有守护时插件自行拉起；右下角提示条轮询宿主 pid，直到新进程应答。
 - [AngleNaris/fanframe](https://github.com/AngleNaris/fanframe) — 繁界 - 意思是“繁星的域界”，这个插件通过对DSH桌面版的UI界面进行轻度的打磨，带来更舒适的日常交互体验。我为DSH带来了放置图标的统一侧边栏，给对话列表充足的空间，同时避免插件喜欢随意摆放自己的图标造成的混乱。此外，为对话正文增加了染色处理，让文字阅读更轻松愉快。最后，通过冷峻的无圆角风格和大量增加的细微交互动画，增加一些小小的精致感。
+- [angls4/dsh-window-drag](https://github.com/angls4/dsh-window-drag) — 恢复 DeepSeek Harness 桌面版（macOS）标题栏的窗口拖动与双击缩放。
 - [anitman/dsh-plugin-video-player](https://github.com/anitman/dsh-plugin-video-player) — 侧栏浮动窗口里的抖音式刷视频：本地/SMB NAS 文件夹上下滑动，或粘贴在线视频地址（yt-dlp 解析，支持 bilibili/YouTube 与 cookies.txt 登录态）；窗口随视频宽高比自适应，支持全屏、拖动缩放、Range 流式播放，并提供 agent 视频推送队列端点。
 - [ankesu/dsh-live2d-pet](https://github.com/ankesu/dsh-live2d-pet) — DSH 的 Live2D 桌宠：悬浮的 Cubism 模型，表情随状态变化并跟随鼠标；尺寸与位置由插件配置驱动；内置官方 Haru 示例模型（© Live2D Inc.）。
 - [Anna-la/dsh-simplify](https://github.com/Anna-la/dsh-simplify) — Web 界面清理：清理模式下悬浮元素右键即可移除，刷新后依然生效，设置页中可原样恢复。
@@ -2124,6 +2125,7 @@ dsh plugin --profile web add dshmarket
 - [woodfood111/dsh-token-live](https://github.com/woodfood111/dsh-token-live) — DeepSeek Harness 输入框下方的实时草稿 token 数、按官方高峰/空闲费率计算的会话花费、上下文占用，以及同样的用量在最贵的另一个模型上会花多少；纯客户端，没有 host 半，不接触凭据。
 - [woosh2010/dsh-usage-dashboard](https://github.com/woosh2010/dsh-usage-dashboard) — DSH 用量分析坞：输入框峰谷计费坞（周末全天谷时）、实时余额、跨会话历史、按日期下钻与图表。
 - [wssfk12138/dsh-damage-pulse](https://github.com/wssfk12138/dsh-damage-pulse) — 在 DSH Web 界面追踪 DeepSeek Token 用量、单次与会话费用及账户余额，并显示缓存感知的扣费动画。
+- [WuWei-Peng/dsh-od-quota](https://github.com/WuWei-Peng/dsh-od-quota) — OpenDesign 订阅额度：在插件设置页用设备码登录，查看 5 小时与 7 天的剩余额度，设置页和会话顶栏各显示一组进度条。
 - [wwu328763-netizen/dsh-billing-compass](https://github.com/wwu328763-netizen/dsh-billing-compass) — 输入框下方的计费面板：DeepSeek 账户余额、官网各模型用量与消费（含每亿 token 单价）、本次运行与整段对话的费用估算。点击弹出面板，面板与输入框同宽同位；余额走官方 /user/balance，用量与消费走 platform 的 usage 接口，整段用量由本地会话日志只读汇总。零依赖（node:https + node:zlib），不写任何文件。
 - [X-Xyy/dsh-api-balance](https://github.com/X-Xyy/dsh-api-balance) — 在对话标题栏实时显示 DeepSeek API 余额与本会话 token 用量，详情面板展开余额拆分（充值／赠送）、请求次数、输入／输出／缓存命中 tokens 与上下文占用；API Key 每次查询现取，不缓存、不落盘、不返回浏览器。
 - [x2802490130-prog/dsh-balance-float](https://github.com/x2802490130-prog/dsh-balance-float) — Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。
@@ -5758,6 +5760,7 @@ dsh plugin --profile web add dshmarket
 - [wx971025/dsh-openspec](https://github.com/wx971025/dsh-openspec) — 在 Web UI 会话标题栏打开当前项目的 openspec/ 目录，浏览、预览、编辑并保存其中的文件，自动跟随会话工作区。
 - [yang1604454533-netizen/dsh-ASD-100](https://github.com/yang1604454533-netizen/dsh-ASD-100) — 强制所有回复和文档按 ASD-STE100 简化技术英语输出。命令：/asd100 on、/asd100 off、/asd100。
 - [yfwu2020/dsh-reply-visual](https://github.com/yfwu2020/dsh-reply-visual) — 在 DSH Web 界面每条定稿回复下加一个「图解」按钮：模型产出单文件 HTML（内联 SVG），右侧栏以沙箱 iframe 渲染；带图解／源码／原文三个视图、命中磁盘缓存即回放（不再调用模型）的会话内历史列表、重画与另存 .html。
+- [yimengsuper2432/dsh-auto-convert](https://github.com/yimengsuper2432/dsh-auto-convert) — 在 read、read_image 与 vision_* 打开文件之前先处理：长边超 2048 像素或体积超 8 MB 的图降采样（同一轮可降到 1280 再试一次），BMP/TIFF 转 PNG，按字节纠正标错的上传类型，并把 docx/xlsx/pptx、有文字层的 PDF、csv/tsv 与 html 转成 Markdown，不依赖任何外部程序。
 - [YiuTerran/dsh-wps365-plugin](https://github.com/YiuTerran/dsh-wps365-plugin) — 通过本机安装的 wps365-cli 读写 WPS 365 云文档（智能文档与 .docx/.xlsx/.pptx），写入前先做并发冲突比对；需要 WPS 365 企业版账号。
 - [yiyunet/dsh-kill-ai-slop](https://github.com/yiyunet/dsh-kill-ai-slop) — AI垃圾过滤（Kill AI Slop）：给收到的文件打一个可回溯的体检得分（表达／执行／决策三维加权），用交付承接台账审查工作空转，每条引文回原文机器复核；支持 docx/pptx/xlsx/pdf/txt/md/csv/json/html。零运行依赖、零联网、纯本地计算。
 - [YujpVc/ppt-assistant](https://github.com/YujpVc/ppt-assistant) — DeepSeek Harness 的一条龙 PowerPoint 助手预设，支持可编辑演示文稿生成、保留模板的修改、渲染和结构质量检查。需 Python 3.10+ 并安装 requirements.txt；渲染另需 LibreOffice 与 pdftoppm，扫描件 OCR 需 Tesseract。
