@@ -3969,6 +3969,7 @@ dsh plugin --profile web add dshmarket
 - [1321928757/dsh-mysql](https://github.com/1321928757/dsh-mysql) — DeepSeek Harness 的 MySQL 连接插件：在设置页配置多套连接（每连接可配表白名单与写权限），输入栏一键切换当前会话的连接，并为所有 Agent 预设提供 mysql_query / mysql_tables / mysql_execute 工具。
 - [1344738825/ai-residue-cleaner](https://github.com/1344738825/ai-residue-cleaner) — 把 AI 会话留下的草稿、备份、日志、缓存收进可逆回收站；项目结项时归类成品、归档可引用结果并生成结项清理清单，未结项期间一切保留。清运引擎是 Python 脚本，需 PATH 上有 Python 3（自动探测 python3 / python / py；缺了它清运跑不起来，会明确提示）。
 - [1497105876/dsh-media-studio](https://github.com/1497105876/dsh-media-studio) — 在对话里直接生成图片和视频并发送到会话：generate_image / generate_video / send_media 三个工具，内置 Agnes 免费额度与任意 OpenAI 兼容后端，长耗时生成走后台任务完成后自动推送，内联画廊与视频卡片支持下载、灯箱查看和系统默认应用打开。
+- [1497105876/dsh-tools-manager](https://github.com/1497105876/dsh-tools-manager) — 按 Agent 预设（模式）管理的工具黑名单，只做禁用：在设置页勾掉一个工具，它就从该模式的工具 schema 里消失、调用也会被拒；不设白名单、不负责启用，没被点名的工具一概不碰。每行可展开看工具自己的描述，规则存在 profile 之外的单个 JSON 文件里。
 - [19north/dsh-redstone-music](https://github.com/19north/dsh-redstone-music) — Minecraft 红石音乐：rm_render 从 SoundFont 渲染乐器采样并把起音对齐到 3ms 内，rm_build 把谱面与轨表编译成分片 mcfunction 数据包（可选经 RCON 部署开建）。
 - [1byteone/dsh-plugin-nlbi](https://github.com/1byteone/dsh-plugin-nlbi) — 自然语言查询 + 商业智能报表：Text2SQL、图表、报表收藏、Schema/数据面板与侧栏工作台，基于 DSH 的 MySQL 连接层。
 - [1jiegejiayouxuewangan1/dsh-desktop-uia](https://github.com/1jiegejiayouxuewangan1/dsh-desktop-uia) — 通过 UI Automation 控制 Windows 桌面：九个工具读取窗口控件树、按 id 走控件自身的 UIA 模式操作，每次写入都受审批策略、动作日志与设置面板约束。
@@ -6452,6 +6453,7 @@ dsh plugin --profile web add dshmarket
 - [yixing233/dsh-crabtodo](https://github.com/yixing233/dsh-crabtodo) — DeepSeek Harness 的人机共享待办：你和 AI 通过侧边栏或待办工具管理同一份任务，支持项目级与全局待办，并可一键把任务引用进输入框。
 - [ypx01/dsh-auto-shutdown](https://github.com/ypx01/dsh-auto-shutdown) — 仅 Windows：会话标题栏上的「任务完成后自动关机」开关——所有开启它的会话都不再有进行中的回合、任务、子代理或定时执行（默认还要求其他在线会话也空闲）时，开始两分钟倒计时，结束后关机；点倒计时即取消，没开这个开关的会话不会触发任何动作。
 - [YukimuraSol/dsh-cursor-modes](https://github.com/YukimuraSol/dsh-cursor-modes) — 为 dsh 网页端提供类 Cursor 的模式切换：带委派闸门的计划模式、带工具调用配额的多任务模式，以及 create_plan / request_more_edits / list_running_agent 三个工具。另有带 Build 按钮的计划卡片，并把子代理下拉收成只显示运行中的行。
+- [yuna78/dsh-plugin-dev-workflow](https://github.com/yuna78/dsh-plugin-dev-workflow) — 面向 DSH 的研发交付工作流 preset：一段工作协议加七个工具，保留用户原话与验收条件、记录反馈决策、拆解带验收的任务、记录真实验证命令与退出码，并以项目隔离的 JSONL 记录完成总结。
 - [yuna78/dsh-slayer](https://github.com/yuna78/dsh-slayer) — 给 DSH 装两条干活形态——8 个固定工位的终身奴，或按约定一次最多点 3 个的日结奴；跨形态调用会在调用时被 guard 拒绝。8 工位形态还需在 profile 的 dsh.profile.bundles 里挂 @deepseek-ai/dsh-experimental-agent-team-profile，否则该形态没有 Team 工具、会降级为单人作业。
 - [yuqiguang/dsh-nexus](https://github.com/yuqiguang/dsh-nexus) — 个人编码助理：在 DSH 中安排、跟进与验收本机 Codex 或 Claude Code 任务，并提供微信、企业微信与飞书远程渠道。
 - [Yuuyuko-uu/dsh-speak-up](https://github.com/Yuuyuko-uu/dsh-speak-up) — 让 AI 伙伴自己起个话头：按设定间隔掷一次本地骰子决定要不要往指定会话里说话，带安静时段与试运行。
@@ -7938,6 +7940,7 @@ dsh plugin --profile web add dshmarket
 - [cynch18/plugin-switch](https://github.com/cynch18/plugin-switch) — 插件清单页滑块开关：在设置 → 插件 → 插件清单实时启用/停用任意插件，无需重启；支持分组/筛选、批量开关、撤销与自动备份。
 - [Dariandai/dsh-starter-pack](https://github.com/Dariandai/dsh-starter-pack) — 精选插件启动包：从设置页或 /setup 命令一键批量安装并配置 4 组共 15 个经过筛选的社区插件。
 - [Diluka/dsh-agent-plugin-market](https://github.com/Diluka/dsh-agent-plugin-market) — 在网页设置页管理基于 Git 的 DSH 插件市场、已安装的 agent 技能和可选 Codex hooks。
+- [DogEgg-alR/dsh-plugin-installer](https://github.com/DogEgg-alR/dsh-plugin-installer) — 在插件页的一个标签里安装、更新和卸载 DSH 插件。安装直接调用 profile 进程内的 pluginManager 服务，因此桌面端运行中也能装，不必只靠命令行。更新委托给 dsh-market 的公开 update API v1（该区需要装 dsh-market），把市场报告的阶段、百分比与已下载字节显示成进度条，市场提供恢复点时给出一键回滚。卸载被「插件正在使用中」拒绝时，先停用该组合包，再从 profile 清单里摘除，并把残留文件记入 profile 下的待清理队列，下次启动后自动清扫。
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) — 在 DeepSeek Harness 设置页内浏览、搜索并安装社区插件，支持分类筛选、一键更新与停用，以及主题切换与配置备份。
 - [dsh-research/dsh-research](https://github.com/dsh-research/dsh-research) — 精选科研插件市场：在设置里加一页「科研插件」，收录逐个读过代码的文献检索、文献管理、写作与科研工作台插件——一键安装、更新、卸载并钉住审读过的版本，面板内重启，只发一个网络请求（拉取自家目录）。
 - [dshhub-co/dshhub-market](https://github.com/dshhub-co/dshhub-market) — DeepSeek Harness 口令插件市场：输入 6 位口令解锁并安装创作者分享的插件，附带主题、备份、更新与诊断。
