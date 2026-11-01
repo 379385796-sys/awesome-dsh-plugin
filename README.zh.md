@@ -5404,7 +5404,7 @@ dsh plugin --profile web add dshmarket
 - [bauerelizabeth07139/opencode-eyes](https://github.com/bauerelizabeth07139/opencode-eyes) — 给不具备多模态能力的模型一双眼睛:把随插件分发的 stdio MCP 服务器挂成 mcp__opencode_eyes__describe_image,把图片交给 StepFun step-3.7-flash 并返回详细描述。
 - [bauerelizabeth07139/opencode-eyes-nvidia](https://github.com/bauerelizabeth07139/opencode-eyes-nvidia) — 走 NVIDIA NIM 的视觉能力:把随插件分发的 stdio MCP 服务器挂成 mcp__opencode_eyes_nvidia__describe_image,用 7 个托管视觉模型之一(默认 MiniMax-M3)描述图片,并支持多 Key 轮换。
 - [bauerelizabeth07139/opencode-ppocr-mcp](https://github.com/bauerelizabeth07139/opencode-ppocr-mcp) — 本地 OCR,不把文件发到云端:把 PP-OCRv6 Medium stdio MCP 服务器(PaddleOCR + ONNX Runtime CPU)挂成 mcp__ppocr__ocr_image 与 mcp__ppocr__ocr_pdf,识别图片和多页 PDF。
-- [BeatAPI/beatapi-agent-plugin#dsh-design](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-design) — 启动已发布的本地 BeatDesign 工作台，接入项目、画布、素材和时间线的 30 个 MCP 工具，附带共享项目与远程生成确认流程。
+- [BeatAPI/beatapi-agent-plugin#dsh-design](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-design) — 启动已发布的本地 BeatDesign 0.2.5 工作台，接入项目、画布、素材和时间线的 30 个 MCP 工具，附带共享项目与远程生成确认流程。需 Node.js 22.12+ 且 3020 端口空闲；抽帧与时间线渲染另需 PATH 上的 ffmpeg/ffprobe（浏览器导出不需要）。
 - [BeatAPI/beatapi-agent-plugin#dsh-media](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-media) — 提供图片视频模型发现、接口检查、价格预览、确认后生成及原任务续查，通过 BeatAPI 执行。
 - [boheastill/phone-eye](https://github.com/boheastill/phone-eye) — 让 AI 助手看见并操作真实安卓手机：phone_look（视觉+UI 树融合判读）、点击/滑动/输入、截图——经 adb，适用于任何 MCP 客户端。
 - [br1nosense/dsh-vision-solution](https://github.com/br1nosense/dsh-vision-solution) — 为 DSH 纯文本模型补充视觉能力：识图技能（图片理解/OCR/文档解析，竞速池→自定义通道→本地）+ 幂等宿主补丁，让图片消息能送达模型侧。
@@ -8189,7 +8189,7 @@ dsh plugin --profile web add dshmarket
 - [FaMuer/dsh-real-fish-pet](https://github.com/FaMuer/dsh-real-fish-pet) — 在 dsh web 界面右下角游动的 3D 渲染鲸鱼桌面宠物，任务完成或出错时播放 attention 动画与鲸吟声。
 - [fbbDirge/dsh-xiaoheihe](https://github.com/fbbDirge/dsh-xiaoheihe) — 定时浏览小黑盒帖子，支持可选的人格评论与回复、扫码登录和浏览历史。
 - [FeWOO/DeepSeek-meme](https://github.com/FeWOO/DeepSeek-meme) — DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。
-- [Firefly26710Lover/dsh-firefly-pet](https://github.com/Firefly26710Lover/dsh-firefly-pet) — 透明置顶的桌面桌宠：走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。仅支持 Windows。
+- [Firefly26710Lover/dsh-firefly-pet](https://github.com/Firefly26710Lover/dsh-firefly-pet) — 透明置顶的桌面桌宠：走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。依赖 DSH Desktop 自带的 Electron 运行时（~/.dsh/electron），缺失时桌宠不会出现；仅支持 Windows。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
 - [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — DSH 桌面宠物：语音聊天、多人设、聊天记忆、B 站视频与 QQ 群记忆（只读本地文件）；「电脑操作」需在面板里显式打开总开关后才响应语音指令，语音聊天需先在 DSH 中启用内置语音输入。dsh-pet（MIT）的 fork，不能与原版同时安装。
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
