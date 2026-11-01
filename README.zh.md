@@ -1934,6 +1934,7 @@ dsh plugin --profile web add dshmarket
 - [JonyChan1350/dsh-llm-balance](https://github.com/JonyChan1350/dsh-llm-balance) — 聊天输入框下方显示多个 LLM API 账户余额，内置 DeepSeek、OpenRouter、SiliconFlow 预设。
 - [Jovan1666/dsh-commandcode-quota](https://github.com/Jovan1666/dsh-commandcode-quota) — 在 DSH 侧边栏「设置」上方显示 Command Code 套餐额度：5 小时、每周、月度三条窗口的已用百分比与重置倒计时，附 /quota 命令与零依赖命令行工具。API key 从你自己的 provider 路由里读取，无需配置，也不依赖其他插件。
 - [kai-GitHubaccount/dsh-usage-panel](https://github.com/kai-GitHubaccount/dsh-usage-panel) — 会话头部显示 DeepSeek 余额与本会话 Token 用量：三级余额预警、自定义阈值、一键充值入口、分段 Token 条与缓存命中率，并采用可见时才轮询的省流策略。
+- [KAIXIN2006/dsh-qwen-coupon-balance](https://github.com/KAIXIN2006/dsh-qwen-coupon-balance) — 在 DSH 侧边栏显示阿里云代金券余额（抵扣千问 / 百炼调用的那笔钱），AccessKey 只保存在本机。
 - [kelearns/dsh-token-usage](https://github.com/kelearns/dsh-token-usage) — Token 用量热力图：日/周/累计视图，12 个月窗口，支持深浅色主题。
 - [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) — 侧边栏计费仪表盘：从会话日志聚合真实用量（按模型/按日统计调用、Token、缓存），按最新多厂商官方价格估算人民币费用，订阅套餐（coding/token/agent）通道豁免计费，并带各厂商健康状态圆点。
 - [kialajin-l/DSH_Plus#dsh-balance-badge](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-balance-badge) — 标题栏余额徽章：余额、今日花费、本会话 tokens 一目了然，官方按峰谷时段计价展示，TokenBom 等自定义服务商按平价展示。
@@ -3056,6 +3057,7 @@ dsh plugin --profile web add dshmarket
 - [Aeroscis/dsh-temptask](https://github.com/Aeroscis/dsh-temptask) — DeepSeek Harness 的临时任务模式：一键创建一次性的时间戳工作区并开会话，直接成为侧边栏原生工作区节点。
 - [agi321/dsh-temp-chat](https://github.com/agi321/dsh-temp-chat) — 用 /single-turn 与 /multi-turn 在独立子代理中作答，结果只留在当前对话，不进入主模型上下文。
 - [ai-v5/LLMAgentChatRoom](https://github.com/ai-v5/LLMAgentChatRoom) — 自托管聊天室：主人与编码 agent 共用一个房间。插件在服务未运行时启动本地 Node 服务（SQLite、REST、SSE），侧边栏入口在面板中打开房间界面，五个工具（room_join、room_send、room_read、room_status、room_leave）把收到的消息以标注发送者的用户消息推入会话并写入会话日志，Codex 连接器把房间消息经 codex queue 转发。每条消息带服务端盖章的 author、platform、seq，非主人消息按数据处理并标注发送者。需 Node.js 24+。
+- [Aizai9527/dsh-session-finder](https://github.com/Aizai9527/dsh-session-finder) — 跨会话搜索 DSH 聊天记录并直接跳到命中的那条消息：多关键词同时匹配，可限定当前会话、全部会话或某个项目，工具命中按 callId 精确定位，浮层可拖拽并支持上一处、下一处。
 - [Akiccat/dsh-edit-question](https://github.com/Akiccat/dsh-edit-question) — 在每条用户提问旁加「编辑提问」入口：改完从该提问重新开始，原图一并重发（还可粘贴补充图），原会话可选保留或归档。
 - [AKS1st/dsh-archived-conversations](https://github.com/AKS1st/dsh-archived-conversations) — 侧边栏底部的已归档对话列表，可只读预览最近消息；针对产品刻意隐藏且无法重新打开的归档会话。
 - [alchemistwu/dsh-tool-call-guard](https://github.com/alchemistwu/dsh-tool-call-guard) — 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。
@@ -3895,6 +3897,7 @@ dsh plugin --profile web add dshmarket
 - [tancheng33/dsh-yogacara](https://github.com/tancheng33/dsh-yogacara) — 以唯识心所与种子藏记录 agent 的状态，并以第一人称倾向写回提示词。
 - [Tangcuyu4/dsh-long-memory](https://github.com/Tangcuyu4/dsh-long-memory) — 跨会话长期记忆包：混合检索记忆库（BM25+中文二元分词）、长文切块检索、聊天记录提取精炼，外加上下文总结存档与翻阅，重要记忆与最新总结自动注入提示词。
 - [text2future/flowix#dsh-flowix-memory](https://github.com/text2future/flowix/tree/main/dsh-flowix-memory) — 将本地 flowix-cli 注册为 MCP 服务，让 agent 可以搜索、读取、创建和编辑 Flowix 备忘与思维导图产物。
+- [thawline/dsh-memewiki](https://github.com/thawline/dsh-memewiki) — 离线梗/黑话词典：内置 6668 条词条，只在消息像在问梗时才提前查好注入上下文。带查询工具、可增删改词条与别名的设置页、可调的玩梗尺度滑杆，以及检查版本更新。
 - [timestatic/dsh-session-notebook](https://github.com/timestatic/dsh-session-notebook) — 从 DSH 会话里记笔记：可收藏整条回复或选中片段，划线会持久重绘回原文位置，可为其补写可编辑的 Markdown 笔记、打标签，按工作区或会话筛选，并导出 Markdown 或完整 JSON 备份；数据以本机 JSON 文件存储。
 - [tinqiao-oss/engramory#plugin](https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin) — 给 DeepSeek Harness 的长期记忆，以纯 markdown 保存，一条事实一个文件。每一步都把索引 `MEMORY.md`（有项目库时含项目库，另加 `$DSH_HOME` 下的全局库）放进运行时上下文，召回不用等模型去读文件。索引有硬上限，默认 200 行 / 25KB，由 `ctx.tools.guard()` 强制执行：让已超限的索引变大的写入被拒绝，缩小它的重写一律放行。左侧栏有只读的「记忆」页，按类型列出笔记。插件不会自行写入记忆。实验性的大肥鱼模式为人设角色加了记录它自己人生的笔记类型。同一个记忆库也可供 Claude Code、Codex、Kiro、OpenClaw 使用。
 - [Tkingxiao/dsh-memu-memory](https://github.com/Tkingxiao/dsh-memu-memory) — 面向长篇 RP 与陪伴对话的记忆插件：三层记忆、逐轮召回、来源标注、角色与世界线边界、关系图、图片附件与独立 WebUI。
@@ -5892,6 +5895,7 @@ dsh plugin --profile web add dshmarket
 - [MAOLEIJIN/dsh-mattpocock-skills](https://github.com/MAOLEIJIN/dsh-mattpocock-skills) — 将完整 mattpocock/skills 技能树打包为 DSH 插件，保留上游调用策略，并在自动同步上游时校验和应用精确匹配的 DSH 语义适配层。
 - [Mark-mph/dsh-kb-curator](https://github.com/Mark-mph/dsh-kb-curator) — 捆绑 kb-curator 技能，用本地三层知识库保存资料，未获用户批准前不写入索引。L2 检索层需另装 @kenz1117/dsh-engram，且引擎目前仅支持 Windows。
 - [master1Sun/dsh-prompt-library](https://github.com/master1Sun/dsh-prompt-library) — DSH提示词库插件：支持提示词增删改查、分类标签、导入导出、AI智能优化、选中文本一键剪藏，附带侧边栏与词库助手气泡提醒。
+- [melano514/dsh-plugin-paper-radar](https://github.com/melano514/dsh-plugin-paper-radar) — 按领域、检索词或 DOI 检索医学与生命科学文献（Europe PMC / PubMed / OpenAlex / Crossref），用 Unpaywall 等源判定开放获取状态，能拿到 OA 全文时自动下载并通过文件头与页数校验；拿不到时生成决策卡，写清自动下载失败的具体原因，并给出科研通互助、Sci-Hub、SciDown、X-MOL 四条人工通道的直达链接，人工取回后用一条命令登记入库。随包 Python 工具仅依赖标准库。
 - [Meteor-system/mattpocock-skills-for-dsh](https://github.com/Meteor-system/mattpocock-skills-for-dsh) — 将 mattpocock/skills 的 25 个正式技能打包为 DeepSeek Harness bundle，附原生 Agent 预设、区分人触发与模型调用的技能 provider，以及轻量 grilling 到 implement 引导。
 - [Meteor-system/superpowers-for-dsh](https://github.com/Meteor-system/superpowers-for-dsh) — 将 obra/superpowers 的 14 个工程技能打包为 DeepSeek Harness bundle，附原生 Agent 预设、自动会话引导和 Windows 沙箱兼容。
 - [MichengAI/dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) — 增加可召唤的领域专家名单，专家以子代理运行，主会话保留任务和最终答复。
@@ -6247,6 +6251,7 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) — 证据优先的操作套件：六个只读工具（能力清单、分阶段编排计划、随包技能阅读、有上限的本地记忆检索、仓库发布审计、发布清单）加五个随包技能；只规划与审计，不做远程写入。
 - [LeslieWylie/review-workflow](https://github.com/LeslieWylie/review-workflow) — 面向 DeepSeek Harness 的结构化多评审人评审工作流：N 个评审人在相互隔离、彼此不可见的 subagent 中独立打分；一名 chair 先按锚点匹配、再按 Δ 级别裁决来调和分歧；一名独立的 critic 负责审计整个评审过程。适用于设计、代码、论文或项目评审。
 - [Letter2025/dsh-model-failover](https://github.com/Letter2025/dsh-model-failover) — 两级模型熔断与回退：模型或平台连续失败后自动熔断，并把下一个请求路由到配置好的备用模型。
+- [LFELKEEA/dsh-peak-valley](https://github.com/LFELKEEA/dsh-peak-valley) — 仅支持 Windows 的 DSH 插件：按北京时间工作日峰时自动停止 SnowLuma 与本地语音服务，谷时自动拉起。
 - [Lhy723/dsh-agent-canvas](https://github.com/Lhy723/dsh-agent-canvas) — 为 DSH Web 提供可交互画布，用于展示 Agent、Subagent、Workflow、Phase 与工具调用之间的关系。
 - [liaowenqi123/dsh-meeting-coordinator](https://github.com/liaowenqi123/dsh-meeting-coordinator) — 给 DSH 会话装上会议室：加入会议室即同时获得召集权与参会义务，且一个会话只能属于一个会议室。召集时把每位参会者 fork 进场——带着它自己已完成的轮上下文，同时剥掉全部工具；主持人自身不带任何上下文，只负责挑下一位发言者；每条发言在说出的当下就落盘。散会后每人拿到一份只属于自己的纪要，作为一条用户输入送回工作区继续干活。
 - [lifangjin/dsh-paoding](https://github.com/lifangjin/dsh-paoding) — DSH 编排模式预设生成器：主 agent 指挥，四个内置帮手各只带本行工具；Web 面板按工作区增删帮手，可给自定角色配专属工具、技能与模型——零 DSH 源码改动。
