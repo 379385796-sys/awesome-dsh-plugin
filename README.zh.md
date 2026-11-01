@@ -4396,6 +4396,7 @@ dsh plugin --profile web add dshmarket
 - [kdcadmin/dsh_qzone_sticker](https://github.com/kdcadmin/dsh_qzone_sticker) — QQ 空间发说说插件：手机 QQ 扫一次码登录，之后由模型按心情挑表情包发说说，支持每天条数上限，静默 Chrome 不占屏。
 - [kenny2077/dsh-web-search-zai](https://github.com/kenny2077/dsh-web-search-zai) — DeepSeek Harness 的 Z.ai / 智谱网页搜索插件，支持 Coding Plan MCP 套餐额度和 REST API 余额两种计费模式，提供原生中英文设置卡片，可复用现有 ZAI_API_KEY。
 - [kentleenot/dsh-trading-toolkit](https://github.com/kentleenot/dsh-trading-toolkit) — DSH agent 的 A股/美股交易工具箱：实时行情、OHLCV K线、ADX 三状态市场分类信号与简易回测预览，数据源东方财富。只读设计，永不下单。
+- [Keridium/dsh-gopeed-downloader](https://github.com/Keridium/dsh-gopeed-downloader) — 把本机 Gopeed 下载器接进 DSH 的 agent 工具：新建、查看、暂停、继续、删除下载任务，诊断或启动 Gopeed 进程，并通过 DSH 后台任务接收下载完成事件（空闲的 agent 会被唤醒）。进程诊断与启动仅支持 Windows，下载相关工具跨平台可用。
 - [kevinchu1981/dsh-insurance-experts#insurance-actuary](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-actuary) — 保险精算师（insurance-actuary）——真跑精算测算：寿险/财险准备金评估（偿二代二期 BEL+RM）、利润测试（NBV/VNB/IRR）、内含价值(EV)、产品定价与损失三角准备金，而非仅讲解。
 - [kevinchu1981/dsh-insurance-experts#insurance-company-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-company-analyst) — 保险公司财务经营分析专家，真跑偿付能力、财务报表、投资、渠道与同业对标测算。
 - [kevinchu1981/dsh-insurance-experts#insurance-ops-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-ops-analyst) — 保险公司经营分析专家（盈安），真跑偿付能力、盈利能力、内含价值(EV)、投资风险与监管合规五维测算。
@@ -4496,6 +4497,7 @@ dsh plugin --profile web add dshmarket
 - [lubanqihao9875/dsh-figma-mcp](https://github.com/lubanqihao9875/dsh-figma-mcp) — DSH 的 Figma MCP 一键连接插件。
 - [lubenweimeiyoukaig/dsh-file-upload-local](https://github.com/lubenweimeiyoukaig/dsh-file-upload-local) — 本地文件上传：回形针按钮与拖拽上传、按会话隔离存储到 .dsh-uploads，并提供 read_document 工具分页读文本、对图片 OCR。
 - [LucienLL/dsh-plugin-proxy](https://github.com/LucienLL/dsh-plugin-proxy) — DeepSeek Harness 全局代理插件：通过 Windows 系统代理或自定义地址统一代理模型请求与工具流量，主界面常驻开关，且 Agent 在对话中实时感知代理状态。
+- [luffysolution-svg/sanmu-skills](https://github.com/luffysolution-svg/sanmu-skills) — 三木科研 Agent Skills 合集：多源学术检索与原位引文追溯、LaTeX/KaTeX 高精度文档解析转 Obsidian 知识库、证据链精读与完整科研工作台。
 - [LUgABeEEE/minas-webdav#dsh](https://github.com/LUgABeEEE/minas-webdav/tree/master/dsh) — 把 minas-webdav MCP server 注册成一行 stdio 配置，给 agent 14 个工具，不挂盘直接操作小米智能存储（MINAS）：列目录、stat、tree、find、du、df、cat、上传下载、mkdir、移动复制删除，另带能力探测。Python 包需另行 pipx 安装。
 - [Luke-Yong/dsh-plugin-knowledge-graph](https://github.com/Luke-Yong/dsh-plugin-knowledge-graph) — 基于代码库知识图谱的 read_graph 工具（CONTAINS / EXPORTS / IMPORTS / IMPORTS_SYMBOL 关系）。
 - [Luke-Yong/dsh-plugin-project-management](https://github.com/Luke-Yong/dsh-plugin-project-management) — 一个 DeepSeek Harness 插件，通过与用户进行项目需求访谈，生成项目时间线 / 甘特图，并导出为 Word 或 Excel 格式。
@@ -6319,6 +6321,7 @@ dsh plugin --profile web add dshmarket
 - [quaner1234-cmd/dsh-subagent-watchdog](https://github.com/quaner1234-cmd/dsh-subagent-watchdog) — 当原生可续接 DSH 子代理因明确的 max-tokens 终止时自动续接一次，然后停止介入。
 - [que3sui/dsh-darwin#forge](https://github.com/que3sui/dsh-darwin/tree/main/packages/forge) — 自进化执行器：消费会话日志挖掘出的问题工单，在评测门（hold-out canary 防作弊）下合成技能候选，人工确认晋级到项目 .dsh/skills 并支持确定性回滚。
 - [R-LEI2536/dsh-more-agent-presets](https://github.com/R-LEI2536/dsh-more-agent-presets) — 为 DSH 提供更多智能体预设，衍生自其他编程智能体（例如 Qwen Code、iFlow）。
+- [rainbowzhu22-eng/cece_legal_skills](https://github.com/rainbowzhu22-eng/cece_legal_skills) — DeepSeek Harness 文书脱敏插件，提供本地识别、人工复核、PDF 框选遮盖、历史记录与可选 Agent 改规则。需 Python 3.9+，首次准备依赖需要联网；仅规则生成需要模型，Windows 待实机验收。
 - [Rainier-Z/dsh-workspace-monitor](https://github.com/Rainier-Z/dsh-workspace-monitor) — 一个适配 DeepSeek Harness 的工作区监测插件，按周期检测并报告文件的新增、修改和删除。
 - [randomix777/dsh-image-gen](https://github.com/randomix777/dsh-image-gen) — dsh-image-gen 优化版：支持批量生图（count 参数）、画廊分页懒加载、请求超时/重试，兼容 7 个提供商：Gemini/OpenAI/Seedream/通义万相/Agnes/智谱 GLM/Stability AI。
 - [recoluan/recowork#recowork-dsh](https://github.com/recoluan/recowork/tree/main/packages/recowork-dsh) — 通过两个受限的 DSH 工具和网页工作区卡片，创建并检查 RecoWork local-agent-project 工作区。
