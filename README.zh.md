@@ -1399,6 +1399,7 @@ dsh plugin --profile web add dshmarket
 - [TussalZeus18028/dsh-open-folder](https://github.com/TussalZeus18028/dsh-open-folder) — 在工作区侧边栏的会话行 ⋯ 菜单中增加「打开文件夹」项，用系统文件管理器打开该会话所属工作区的文件夹。
 - [TWFU-wcy/dsh-scroll-boost](https://github.com/TWFU-wcy/dsh-scroll-boost) — 让视口外的聊天行与轨迹行不参与渲染，长会话滚动更稳；行高按实测保留，滚动条不跳，屏幕内画面不变。
 - [TZHR-invest/dsh-plugins#dsh-mobile-ui](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui) — Web GUI 移动端适配：窄屏全宽响应式布局、会话抽屉、44px 触摸目标、安全区适配与阅读增强，桌面端零影响。
+- [TZYCeng/dsh-model-visibility](https://github.com/TZYCeng/dsh-model-visibility) — 管理哪些模型出现在输入框的模型菜单里。设置页按 Provider 列出模型，支持逐模型开关、渠道级批量显隐和按类型筛选；关闭的模型从菜单中消失，当前会话正在使用的模型保留。每行标注模型类型，对话模型另外标注是否支持推理、适配器公布的思考强度档位、上下文窗口和输入模态。标签按六个来源的优先级合并（设置文档、适配器、中转站 GET /models 响应、内置 pi-ai / models.dev 目录、模型名推断、厂商校正），悬停显示来源，虚线边框表示推断值。一个默认开启的开关让声明纯文本输入的中转站模型真正能接收图片，只在内存里生效，不改配置文件。隐藏列表保存在 profile patch 中，并镜像到 $DSH_HOME。
 - [uckkk/dsh-valley-meter](https://github.com/uckkk/dsh-valley-meter) — 峰谷电表——DeepSeek 用量小助手：输入框上方一枚极简余额徽章，框内只有「货币符号 + 余额数字」两组，官方余额每 5 秒实时刷新；点击符号即在新页签打开官方充值页；光标移入徽章时，符号身下浮现一枚圆形底色（左弧与徽章左端圆角完全重合），并展开 24 小时峰谷时间轴（橙=峰时、蓝=谷时、白色发光指针标当前本地时刻），谷时省钱时段一目了然；今日消耗独立计费；设置面板提供 10 套沉稳配色预置与谷/峰色自定义、详细/极简样式与各项读数开关；全中文界面。
 - [Uid-762/dsh-ai-workbench](https://github.com/Uid-762/dsh-ai-workbench) — 用一句大白话换来一个能用的工作台窗口：侧边栏面板先问几个带推荐选项的问题，模型据此写一个单文件 HTML 产物，插件把它挂成可缩放的浮层窗口或独立标签页。窗口里声明的动作会以 info 级别记进项目日志（不含动作数据）；工作台还能导入、导出，或从市场索引一键安装。
 - [uigdwunm/dsh-conversation-jump](https://github.com/uigdwunm/dsh-conversation-jump) — 在 DSH Web 对话区提供一组圆形按钮，逐条跳到上一条或下一条用户消息，或直接到顶部与底部，并自动翻页加载更早历史。
@@ -6208,6 +6209,7 @@ dsh plugin --profile web add dshmarket
 - [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。
 - [leetom314/dsh-delivery-ledger](https://github.com/leetom314/dsh-delivery-ledger) — 周期性任务调度器 + 只追加的投递账本：按时间窗去重执行，记录失败／放弃行，同窗口重试可重投。
 - [lemoncat7/dsh-partner](https://github.com/lemoncat7/dsh-partner) — 提供隔离记忆、微信渠道、Skill、定时任务、伙伴挂念与依赖任务看板的长期 AI 伙伴。
+- [lengrufeng2008/dsh-science-legion](https://github.com/lengrufeng2008/dsh-science-legion) — 面向数学、物理、天文、工程与生物医药证据的分层多智能体科研战役技能包：共享黑板、独立验证与红队、群狼与迂回战术、token/时间预算、已知答案评测、四智能体单摆 pilot，以及一次抓到并修正评测答案键错误的六智能体四阶 pilot。不宣称解决开放难题。
 - [Leo-sail/dsh-plugin-agent-collaboration#agent-collaboration](https://github.com/Leo-sail/dsh-plugin-agent-collaboration/tree/main/packages/bundle/agent-collaboration) — DSH 里的常驻 Bot 与群聊房间——每个 Bot 都有自己的模型、权限预设、工作区与重启后仍在的会话，每次回答都是一条写进运行记录的 run，侧栏面板据此回放。
 - [LeslieWylie/agent-loop-workflow](https://github.com/LeslieWylie/agent-loop-workflow) — 面向 DeepSeek Harness、与具体项目无关的多智能体协作协议：阻止失控循环的循环守卫、六字段交接格式、按风险分级的评审路由，以及固定的验证→提交→推送→评审→关闭流程。用一个 skill 取代复制粘贴进每个 agent 指令里的相同规则。
 - [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) — 证据优先的操作套件：六个只读工具（能力清单、分阶段编排计划、随包技能阅读、有上限的本地记忆检索、仓库发布审计、发布清单）加五个随包技能；只规划与审计，不做远程写入。
@@ -6349,6 +6351,7 @@ dsh plugin --profile web add dshmarket
 - [sjh9714/routinekit](https://github.com/sjh9714/routinekit) — 把选定的 DSH、本地 MCP 或原生 WebMCP 调用捕获为经过评审的参数化例程，暴露为带类型的工具，重放时重新请求批准。
 - [slow-stack/dsh-study-desk](https://github.com/slow-stack/dsh-study-desk) — 备考与科研学习工作台：三列待办墙（标签与过滤）、间隔重复复习队列（简化 SM-2，已完成的卡照样会到期）、按实际专注分钟点亮的热力图、周报、每日复盘、跨面板存活的番茄钟，支持 Markdown 导出与读回（Obsidian 友好）。可 `dsh plugin add` 安装（npm 包 dsh-study-desk）。
 - [smellgamed3/dsh-plugin-list-sync](https://github.com/smellgamed3/dsh-plugin-list-sync) — 通过兼容 S3 的对象存储同步 DeepSeek Harness 第三方插件列表，提供差异预览、本地快照、回滚与可选的 LLM provider 配置同步。
+- [SMPcosy/dsh-member-manager](https://github.com/SMPcosy/dsh-member-manager) — 把 DSH 的 agent 当公司跑：部门、派工、attempt 凭证、审计账本与成本核算，叠加工作网看板、组织架构图与 DAG 任务图并行派发，无需原生 team 层。
 - [spechenxin/jimu](https://github.com/spechenxin/jimu) — 积木：DSH 分域编排插件，domain_plan 分域确认 + 按域编排子代理（手递手）+ LLM 自动审计。
 - [SpookyWaste/dsh-plan-compact-execute](https://github.com/SpookyWaste/dsh-plan-compact-execute) — 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
@@ -7744,6 +7747,7 @@ dsh plugin --profile web add dshmarket
 - [kinderao/dsh-pocket-relay](https://github.com/kinderao/dsh-pocket-relay) — 手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。
 - [KKUCODES/dshm-plugin](https://github.com/KKUCODES/dshm-plugin) — 将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。
 - [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 配对码远程访问 DSH：手机端可安装 PWA、带 Web Push 推送；另一台设备作为客户端，在原生 DSH 界面里直接操作主机共享的会话，经自建反代或 Cloudflare Tunnel 接入。
+- [Lee-Eee-Eee/dsh-remote](https://github.com/Lee-Eee-Eee/dsh-remote) — 将 SSH 主机与 WSL 发行版接入远程 DSH 工作区，支持环境安装、模型配置移植与本地内嵌远程界面。
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) — 局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。
 - [liaosiliangCodeLife/harness-mate-dsh](https://github.com/liaosiliangCodeLife/harness-mate-dsh) — 把跑在本机的 DeepSeek Harness 智能体接入 HarnessMate 平台：手机 / 浏览器即可对话、收发文件、审批工具调用。
 - [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) — DeepSeek Harness 多端远程访问：从手机、平板、浏览器或另一台电脑继续进行中的会话，端到端加密通道（Noise IK + 自适应 Relay/WebRTC 传输），设备授权管理；远程端仅开放 ApiProxy 能力，支持 dsh-file-viewer 只读文件预览，不提供 Shell、远程桌面或写入权限。
