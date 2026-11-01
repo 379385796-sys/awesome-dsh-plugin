@@ -955,7 +955,7 @@ dsh plugin --profile web add dshmarket
 - [lsh2002/dsh-custom-fonts](https://github.com/lsh2002/dsh-custom-fonts) — 在设置页自定义界面中英文/代码字体与全局字号偏移，实时预览，一键恢复默认。
 - [lsq-dsh-plugins/dsh-workbench-layout](https://github.com/lsq-dsh-plugins/dsh-workbench-layout) — 将 DSH Web 重排为三栏工作台，提供文件编辑、Git 视图、Markdown 预览和工作区终端。
 - [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) — 会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。
-- [lucagiftzek/dsh-artifacts](https://github.com/lucagiftzek/dsh-artifacts) — An Artifacts tab in the DSH sidebar that lists the files an agent produced and previews them in place with live reload, plus artifact template tools for agents.
+- [lucagiftzek/dsh-artifacts](https://github.com/lucagiftzek/dsh-artifacts) — DSH 侧栏里的 Artifacts 标签页：列出 agent 产出的文件并就地预览、支持实时刷新，另提供 artifact 模板工具。
 - [lucas07814-hub/dsh-pet-guardian-dragon](https://github.com/lucas07814-hub/dsh-pet-guardian-dragon) — 面向 DSH Web 界面的可拖拽桌宠，支持互动动作与成长状态。
 - [lucky01222/dsh-workbench-shell](https://github.com/lucky01222/dsh-workbench-shell) — 为 DSH Web 提供 56px 紧凑应用导航栏、独立对话列表与侧栏展开/收起控制；并在对话模型菜单和 /model 中筛除向量、重排及生图/视频型号。
 - [LUgABeEEE/dsh-adapt-packs](https://github.com/LUgABeEEE/dsh-adapt-packs) — 第三方 DSH 插件面板的手机适配包：44px 触控地板、宽度回收、外壳命中区与浮动控件让位；由 dsh-mobile 插件从其 extensions 目录加载（须先装 dsh-mobile 才会生效），附设置页一键装/卸与插件兼容清单。
@@ -4578,7 +4578,7 @@ dsh plugin --profile web add dshmarket
 - [lubanqihao9875/dsh-figma-mcp](https://github.com/lubanqihao9875/dsh-figma-mcp) — DSH 的 Figma MCP 一键连接插件。
 - [lubenweimeiyoukaig/dsh-file-upload-local](https://github.com/lubenweimeiyoukaig/dsh-file-upload-local) — 本地文件上传：回形针按钮与拖拽上传、按会话隔离存储到 .dsh-uploads，并提供 read_document 工具分页读文本、对图片 OCR。
 - [lucagiftzek/dsh-mail](https://github.com/lucagiftzek/dsh-mail) — DSH 的邮件客户端：接入 IMAP、POP3、SMTP 与 OAuth2 账号，提供侧栏阅读标签页、API 发信、定时与 CSV 批量发信（含退订处理），以及 mail_* agent 工具。阅读标签页需配合 dsh-better-sidebar，未装时 agent 工具仍可用。
-- [lucagiftzek/dsh-phone](https://github.com/lucagiftzek/dsh-phone) — A Phone tab in dsh-better-sidebar: SMS and calls over Twilio and SIP lines bridged through Asterisk, call audio through your server, Live, Voicemail and Do not disturb modes with live voicemail transcripts, a Telegram account with chats, voice messages and calls, and phone_* and telegram_* agent tools.
+- [lucagiftzek/dsh-phone](https://github.com/lucagiftzek/dsh-phone) — dsh-better-sidebar 里的 Phone 标签页：通过 Twilio 与经 Asterisk 桥接的 SIP 线路收发短信和通话，通话音频走你的服务器，提供 Live、Voicemail、勿扰模式与实时语音信箱转写，并可挂一个 Telegram 账号（聊天、语音消息、通话），以及 phone_* / telegram_* agent 工具。需要 dsh-better-sidebar、Node 22.5+、带语音与短信号码的 Twilio 账号、可供服务商 webhook 访问的公网 HTTPS 地址，以及从 checkout 构建的 Go daemon（Telegram 还需自备 api_id/api_hash）。
 - [LucienLL/dsh-plugin-proxy](https://github.com/LucienLL/dsh-plugin-proxy) — DeepSeek Harness 全局代理插件：通过 Windows 系统代理或自定义地址统一代理模型请求与工具流量，主界面常驻开关，且 Agent 在对话中实时感知代理状态。
 - [luffysolution-svg/sanmu-skills](https://github.com/luffysolution-svg/sanmu-skills) — 三木科研 Agent Skills 合集：多源学术检索与原位引文追溯、LaTeX/KaTeX 高精度文档解析转 Obsidian 知识库、证据链精读与完整科研工作台。
 - [LUgABeEEE/minas-webdav#dsh](https://github.com/LUgABeEEE/minas-webdav/tree/master/dsh) — 把 minas-webdav MCP server 注册成一行 stdio 配置，给 agent 14 个工具，不挂盘直接操作小米智能存储（MINAS）：列目录、stat、tree、find、du、df、cat、上传下载、mkdir、移动复制删除，另带能力探测。Python 包需另行 pipx 安装。
@@ -6353,7 +6353,7 @@ dsh plugin --profile web add dshmarket
 - [Lorvaste/DSH-Project-Initialization](https://github.com/Lorvaste/DSH-Project-Initialization) — 「想法落地」agent preset：一句话想法 → 需求规格 → 技术方案 → 维护基准；每一步先复述、你确认、再继续。无场景预设：73 个原子 skill（6 主 + verify 调度 + 66 子）按上下文加载。
 - [Lostforest7/dsh-sheetflow](https://github.com/Lostforest7/dsh-sheetflow) — 周期性 Excel 模板填充与对账复核：一次声明文件、工作表、表头行、匹配键与金额列，写入前逐格预览，按精确两位小数比较金额，把未匹配行列为异常项，最后导出填好的模板副本并附 HTML 报告与可回溯到源行的 JSON 轨迹。
 - [LouisHaoL/dsh-timer-agent](https://github.com/LouisHaoL/dsh-timer-agent) — 常驻宿主的定时引擎，带 Web 任务面板与 timer_agent 工具：按 cron 计划触发真实 Agent 会话，可固定已有会话保持上下文连续，也可在指定项目目录新开会话。
-- [lucagiftzek/DSH-Idle-Watchdog](https://github.com/lucagiftzek/DSH-Idle-Watchdog) — Posts a follow-up prompt into opted-in chats that fall silent, and offers a secret-protected HTTP API that posts a message into any chat.
+- [lucagiftzek/DSH-Idle-Watchdog](https://github.com/lucagiftzek/DSH-Idle-Watchdog) — 在久无动静且主动开启的会话里投递跟进提示，并提供一个带密钥保护的 HTTP API，可向任意会话发消息。需 Node.js 22.5+。
 - [lucifersteps/telos-harness](https://github.com/lucifersteps/telos-harness) — 通过微信管理 Apple 日历与提醒事项，写入前展示预览并确认，支持微信定时消息；适用于 macOS 14+ 的 Apple Silicon Mac。
 - [lucyTrump/dsh-runninghub-api](https://github.com/lucyTrump/dsh-runninghub-api) — 在对话中运行 RunningHub 云端 ComfyUI 工作流：设置卡片、sha256 媒体上传缓存、并发闸门与后台任务台账。
 - [lusblead/dsh-Kingdom](https://github.com/lusblead/dsh-Kingdom) — DSH 里的 Agent 王国：领地、角色绑定/换届/会话归属（含模型/Agent 身份），plan→派发→执行→验收治理闭环（Worker 自述≠完成事实），附本地 GUI 操作台。
