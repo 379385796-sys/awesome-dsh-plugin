@@ -1124,6 +1124,7 @@ dsh plugin --profile web add dshmarket
 - [oumaekumiko0821/dsh-splash-gojo](https://github.com/oumaekumiko0821/dsh-splash-gojo) — 用图片做全屏开机动画：启动 HTML 首帧即铺满画面并缓慢推近，横向光带扫过，左下进度与阶段提示，应用挂载完成后淡出。点击任意处或按 Esc / 空格 / 回车可跳过。
 - [outmanwt/dsh-team-fishbone](https://github.com/outmanwt/dsh-team-fishbone) — 会话标题栏鱼骨图面板，展示子代理分工、实时状态、可用的 Token 与耗时指标及共享任务，并支持跳转子会话。
 - [overact/dsh-statusline-plus](https://github.com/overact/dsh-statusline-plus) — 在 DeepSeek Harness Web 显示账户额度、Git 状态、上下文、公开 API 参考费用、Subagents 活动和生成速度。
+- [OverToWind/dsh-todo](https://github.com/OverToWind/dsh-todo) — 会话标题栏里的待办清单：按钮轮播未完成事项，按截止时间以红、黄、绿整块着色；浮动面板可新增、编辑、勾选待办并设置截止时间，已完成收进可折叠区域；数据存 localStorage，跟随 DSH 主题。
 - [oxlyn/dsh-flyout-sidebar](https://github.com/oxlyn/dsh-flyout-sidebar) — 可弹出侧边栏：文件树、Git 未提交变更列表与多标签文件/diff 预览，一键弹出为独立浏览器标签页。
 - [Oxygen-Wang/dsh-cursorlike-sidebar](https://github.com/Oxygen-Wang/dsh-cursorlike-sidebar) — 为 DeepSeek Harness 提供类 Cursor 侧边栏，支持文件浏览、代码编辑、Git 差异、终端、侧边对话及 Ctrl+L 文件引用。
 - [oxygenforce/dsh-agent-activity](https://github.com/oxygenforce/dsh-agent-activity) — 输入框上方的「已做 / 正在做 / 接下来」实时卡片，回答还没出来时就能看到进度。
@@ -3386,6 +3387,7 @@ dsh plugin --profile web add dshmarket
 - [qvsix/dsh-antigravity-bridge](https://github.com/qvsix/dsh-antigravity-bridge) — 在 DeepSeek Harness 里读取 Google Antigravity 的 SQLite 会话并导入为原生侧栏会话，提供 list／read／import 工具与斜杠命令。
 - [qwert702/dsh-context-compressor](https://github.com/qwert702/dsh-context-compressor) — dsh 网页端一键上下文压缩：会话标题栏「压缩」按钮把整段对话总结成几句话，新建同工作区会话以摘要为第一条消息并自动切换，原会话原样保留。
 - [qwert702/dsh-continue-on-limit](https://github.com/qwert702/dsh-continue-on-limit) — dsh 网页端输出上限自动继续：本地模型输出到上限出现提示时，自动发送「继续」让回复接上；双源截断检测、防死循环保护，完全无 UI。
+- [QwQBiG/dsh-archive-delete](https://github.com/QwQBiG/dsh-archive-delete) — 归档会话回收站，支持批量移入、恢复和永久清除，并展示 DSH 与工作区的存储用量、文件类型和大文件。
 - [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) — billion-context官方版：上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。
 - [regrevia/dsh-pause-resume](https://github.com/regrevia/dsh-pause-resume) — 会话头一个按钮停掉回合、目标和后台任务，写盘；重启后同一个按钮把工作接回来。
 - [Relethe/dsh-brief-session-title](https://github.com/Relethe/dsh-brief-session-title) — 把 DSH 会话标题从一句话精简为不含动词的短语，目标五个词以内。
