@@ -3904,6 +3904,7 @@ dsh plugin --profile web add dshmarket
 - [Scorp1o117/dsh-tdai-memory](https://github.com/Scorp1o117/dsh-tdai-memory) — 集成 TencentDB Agent Memory，支持对话捕获、结构化记忆提取、自动召回，以及记忆和对话搜索工具。
 - [SeanWang114514/dsh-memo-notebook](https://github.com/SeanWang114514/dsh-memo-notebook) — 按工作区记录未完成任务：自动捕获排队/执行中的用户指令，插队自动标记打断，一键按原状态恢复重发。
 - [seriousz158/dsh-memory](https://github.com/seriousz158/dsh-memory) — 基于本地 Git 的 DeepSeek Harness 长期记忆，提供中英文混合检索、带引用的上下文、事务式同步、预览与回滚。
+- [shadowRjh/dsh-neuron-memory](https://github.com/shadowRjh/dsh-neuron-memory) — 仿神经元记忆框架：对话自动进海马体，夜巡按关键词分池归档，每轮只注入最小交接（自动压缩）、当前心情（对接 dsh-feiyu-mood）和相关性命中的记忆（艾宾浩斯半衰期衰减，被想起时会像间隔重复一样强化），跨会话、抗上下文压缩；单条/每池硬上限防膨胀，历史会话原文可检索（多帧 zstd），可导入 dsh-fish-memory；可选向量检索（默认关，服务不可用退回关键词）。3D 面板提供星云/皮层/矩阵/极简四套主题，记忆被想起时从中心向节点脉冲。
 - [Shiye-10Pages/dsh-memory-porter](https://github.com/Shiye-10Pages/dsh-memory-porter) — 把你在 Claude / ChatGPT 里已有的历史搬进 DSH：Claude 导出包里的 memories.json 零 token 瞬时入库，本机 Claude Code 记录免导出直读，历史对话用你在 DSH 里已配好的模型提纯。每条记忆都带由代码回原文核对的逐字证据——转述会被丢弃并计数，只在 AI 回复里找到的证据一律转人工确认而非直接入库。
 - [shua-781/dsh-beme](https://github.com/shua-781/dsh-beme) — 块记忆式长期记忆：一件事一块，写进本地只追加的事件账本，再派生块视图与索引，历史全量可回溯，进入上下文的只有匹配的那几块。模型用 memory_remember 记一条、用 memory_recall 取回相关的几条，每步之前还有一次自动召回。数据留在 ~/.beme，不连外部服务，不需要 API key。
 - [sidleo/llm-wiki#dsh-wiki](https://github.com/sidleo/llm-wiki/tree/main/packages/dsh) — 纯 OKF v0.2 Markdown 的通用 agent 知识库：13 个 wiki_* 读写工具、渐进披露、backlinks、AGENTS.md 门控写入、index/log 自动维护、lint 体检，以及命名多目录 bundle 切换（会话级或全局）。
@@ -4546,6 +4547,7 @@ dsh plugin --profile web add dshmarket
 - [llafztq/dsh-video-tool](https://github.com/llafztq/dsh-video-tool) — DSH 视频剪辑工具集：探测、裁剪、拼接、音轨处理、字幕烧录、变速、转码与抽帧，引擎为首次使用时自动下载的 ffmpeg。
 - [lldois/dsh-jev](https://github.com/lldois/dsh-jev) — 基于 TypeSafe Jev 的 DeepSeek Harness 语义工具路由、技能发现与类型化 System One 决策插件。
 - [LLYlab/DLT](https://github.com/LLYlab/DLT) — 一个 DSH 插件里的六个可独立开关的模块：每轮对话的人民币成本、DeepSeek 账户余额、PDF/Word/Excel/CSV 直接读写工具与右栏预览、编译/运行环境表，以及按环境名执行程序或编译 MSBuild 工程的 run/build 工具。工具链路径在运行时解析（扫描 Visual Studio 安装根、%ProgramFiles%、PATH），并可在插件配置里逐个环境覆盖，没有写死在作者机器上的路径。
+- [LOESS16/dsh-masterduel](https://github.com/LOESS16/dsh-masterduel) — 面向 DSH 的 Master Duel 工具面板：带禁限筛选和 AI 智能查卡的查卡、相关卡片、稀有度徽章、收藏与构建拖放、可收放收藏栏、规则引擎先手实测与 hand_odds 起手概率、卡组类型排行、卡组检查。卡图与卡文在运行时从第三方来源获取，插件不打包卡牌数据；需要单独安装 master-duel-ai-advisor MCP。
 - [lof6yo/dsh-opencode-live](https://github.com/lof6yo/dsh-opencode-live) — 通过 ACP 把 OpenCode 作为 DSH 子智能体运行，并在右侧边栏实时展示它的 agent 与模型、工具调用和它自己派生的子 agent；权限请求会变成 DSH 问题卡片，可选允许一次、始终允许或拒绝。
 - [LoKiGGo/dsh-tools](https://github.com/LoKiGGo/dsh-tools) — 面向 dsh web profile 的个人工具箱，各功能可单独开关：任务完成桌面通知、一键重启、会话删除、插件启停、更新检查，以及若干界面小工具。
 - [lonelymoon87/dsh-code-intel](https://github.com/lonelymoon87/dsh-code-intel) — 用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。
@@ -7710,6 +7712,7 @@ dsh plugin --profile web add dshmarket
 - [weisofns/dsh-security-guard](https://github.com/weisofns/dsh-security-guard) — DSH 插件安全卫士：28 条规则静态扫描、风险评分、白名单/黑名单、本地 Web 仪表盘与 DSH 内风险弹窗。
 - [wld007/dsh-medical-anonymizer](https://github.com/wld007/dsh-medical-anonymizer) — 在 DeepSeek Harness 中批量匿名化病历文本、CSV、JSON 与 XLSX：先跑确定性标识符规则，可选 OpenAI 兼容模型做发现与复核；按精确区间替换以保持文件结构，同一值保持同一假名，并输出审计报告与映射库。DICOM 影像按 PS3.15 附录 E 只处理头部元数据，像素数据逐字节保留。
 - [wld12314/agent-web-sandbox](https://github.com/wld12314/agent-web-sandbox) — 在内容进入模型之前净化抓取的网页：剥离隐藏文本、站外图片与内联数据，其余内容用带金丝雀的不可信分隔符包裹，并标记提示注入。
+- [Wldpm/dsh-fileguard](https://github.com/Wldpm/dsh-fileguard) — 文件守卫：拦截危险的文件删除/写入命令，需用户提供 token 才放行。
 - [wulun811/dsh-plugin-vet](https://github.com/wulun811/dsh-plugin-vet) — DSH 插件信任流水线：确定性静态扫描判定、可选运行时守卫与蜜罐诱饵、agent 审查协议技能与浏览器盾牌状态灯，只报警不执法。
 - [wxlei2004/dsh-plugins#dsh-re-workbench](https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-re-workbench) — 逆向分析工作台：通过 @deepseek-ai/dsh-mcp-client 把本机 IDA Pro 桥接进 DSH，将 ida-pro-mcp 工具集（反编译、xref、重命名、注释）以 mcp__ida__* 注册给模型。自动选择 idalib 无头模式（进程内分析二进制，无需打开 IDA GUI）或 GUI 模式（连接 IDA 插件 RPC，默认 13337 端口）。附带 re_check、re_open、re_status 三个工具；内置 MCP server 为零依赖 stdio 代理，任意 MCP 客户端可直接挂载。
 - [WyattJHayes/dsh-feishu-channel](https://github.com/WyattJHayes/dsh-feishu-channel) — 面向安全的 DeepSeek Harness 飞书通道：提供白名单远程 Agent 访问、工作区路径与符号链接边界校验、风险分级审批、会话隔离、日志脱敏和有界消息队列。
