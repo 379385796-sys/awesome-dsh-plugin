@@ -6719,6 +6719,7 @@ dsh plugin --profile web add dshmarket
 - [Zhucy123/source-code-mgmt](https://github.com/Zhucy123/source-code-mgmt) — DSH 网页界面的代码管理面板，五步搞定 Git 日常：① 环境检查自动检测 git/gh/ssh，缺工具一键安装（gh 支持镜像下载源加速，Windows 也可用）并带检查更新；② SSH ed25519 密钥生成/连接测试 + 一键写 443 配置绕过 22 端口封锁，Gitee 私人令牌在此配置；③ 查看仓库状态、并排 diff、暂存提交、切换分支、查看/回滚历史，一键新建仓库并推送，自动忽略超 100MB 文件；④ 列出账号名下所有远程仓库一键克隆；⑤ 五步发布 npm 包。支持 GitHub / Gitee 双平台，界面中英文跟随 DSH 设置实时切换。
 - [ZIye1208/dsh-github-mcp](https://github.com/ZIye1208/dsh-github-mcp) — 把 GitHub 官方远程 MCP server 封装为 DSH 插件：PAT 存入 DSH 凭据中心（.credentials.yaml），提供 github_set_token / github_token_status 模型工具，GitHub 工具以 mcp__github__* 形式可用。
 - [ZIye1208/dsh-github-mcp-hint](https://github.com/ZIye1208/dsh-github-mcp-hint) — GitHub MCP 辅助面板：在「设置 → 插件 → GitHub MCP」展示可复制的示例提示（30 条示例池随机 4 条）、可视化公开仓库的星/fork/语言，并提供 gh_repo_stats / gh_current_user 模型工具。
+- [zjj1769404838/dsh-git-panel](https://github.com/zjj1769404838/dsh-git-panel) — 在输入框旁加一个 Git chip，点开是居中工作台（改动、历史、文件、标签、贮藏），设置页另有一个 Git 分节。支持多账号的 OAuth 设备码流程与 PAT，按仓库设三档权限（完整、只读、无权限），写操作受全局开关控制、读操作受允许目录白名单控制，推送目标远端不属于有写权限的账号时会被拒绝。差异就地预览，带行号、四档布局、词级强调、语法高亮与 Ctrl/⌘+F 查找；Markdown 与图片可内联渲染，提交信息可搜索，也能调用宿主 LLM 服务从暂存差异生成提交信息。提供 8 个 Agent 工具、51 个本地 HTTP 接口与 8 种语言，令牌以 AES-256-GCM 加密落盘。
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) — PR 评估和改进顾问：基于历史反模式和成功模式评估 PR 成功率，一键评分并提供可操作的改进建议。
 
 ### 🔔 通知与集成
@@ -7312,6 +7313,7 @@ dsh plugin --profile web add dshmarket
 - [moon16u/dsh-pouch#dsh-restart](https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-restart) — 安全的分离式 DSH 重启：/restart 与 /dsh-restart 斜杠命令（原生候选样式）加 dsh_restart Agent 工具；分离的 worker 在 3 秒后重启 DSH 且会话不冻结，Windows/macOS 走基于官方 appExit 服务的原生 Node helper。
 - [MoonlitDropOfBlood/dsh-deveco](https://github.com/MoonlitDropOfBlood/dsh-deveco) — HarmonyOS 全栈开发套件：右侧边栏提供 HiLog 检查器（实时流与级别/包名/关键词过滤）与 ArkUI Inspector（截图点选高亮、可折叠组件树、节点属性搜索、盒子模型），两种树源——DevEco 调试源（ark 调试链路，提供 padding/margin/border 声明值与自定义组件名）与 uitest 无障碍树；.ets 查看器提供 ArkTS 语法高亮；注册 harmony_ui_tree agent 工具供对话内取组件树；设置页管理 DevEco Studio/CLT 工具链与 USB/网络设备。21 个 Remote 方法，82 个单元测试。
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。
+- [mouyu6508-hue/dsh-fusion](https://github.com/mouyu6508-hue/dsh-fusion) — 检查 DeepSeek Harness 插件装配层的冲突：跨 bundle 重复的 loader 名（install-shadow）、同一个 id 被写成两个 name、一层要开一层要关、以及被后一层静默覆盖的配置键，并把覆盖合成终值补丁。带一条 DSH 起不来时也能跑的 CLI，另有一个会读运行时 loader 的 fusion_report 工具。
 - [Mr54233/dsh-restart-now](https://github.com/Mr54233/dsh-restart-now) — DSH 桌面版一键重启，五个入口可逐项开关：侧栏面板、侧栏底部、会话标题栏、设置 → 通用行、斜杠命令 /restart。只给主进程发关闭信号让宿主优雅退出（会话日志得以下盘），再由脱离进程树的助手自动拉起；可选守卫会等待进行中的任务或插件安装结束，重启结果写成回执，动作请求仅限本机同源，所有开关落 profile 配置文件。四个界面入口可单独关闭，斜杠命令始终可用。
 - [MrGnUm/dsh-image-webp-to-png](https://github.com/MrGnUm/dsh-image-webp-to-png) — 把 WebP 附件图片转码成 PNG，让带 alpha 通道的图能在无法解码 WebP 的 LLM 后端上加载（例如 llama.cpp）。
 - [MrYangyt/dsh-k8s](https://github.com/MrYangyt/dsh-k8s) — 基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。
