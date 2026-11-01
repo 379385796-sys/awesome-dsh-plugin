@@ -408,6 +408,7 @@ dsh plugin --profile web add dshmarket
 - [cjm-m/dsh-paste-code-block](https://github.com/cjm-m/dsh-paste-code-block) — Cherry Studio 式粘贴：把多行/缩进/围栏文本或代码粘进 DSH Web 输入框时收成带边框、可折叠、带语言标签的卡片，发送时还原为围栏代码块。
 - [Cjrrrrrrrr/dsh-plugins#dsh-sidebar-tidy](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-sidebar-tidy) — DSH Web 侧边栏布局修正：给插件动作区限高并允许滚动、缩小内联配对二维码、收紧品牌行——底部插件变高时，工作区与会话列表依然点得到。
 - [clarag0d/dsh-locale-multilingual](https://github.com/clarag0d/dsh-locale-multilingual) — 为 DeepSeek Harness 增加四种界面语言（繁體中文、日本語、한국어、Français），语料随包内置，完全离线。
+- [ClockworkParrot/dsh-prompt-optimize](https://github.com/ClockworkParrot/dsh-prompt-optimize) — 在输入框发送按钮左侧添加「优化提示词」按钮，用当前会话的模型路由改写草稿并通过编辑器原有路径原地回填，一次撤销即可还原原文。
 - [Cloud017/dsh-prompt-reforge](https://github.com/Cloud017/dsh-prompt-reforge) — 在 DSH 输入框工具栏加一个「重铸」按钮，把当前草稿就地改写成更精准的提示词——整段替换只占一步撤销，可一键恢复原文，也可中途取消。
 - [clown139880/dsh-live2d-avatar](https://github.com/clown139880/dsh-live2d-avatar) — DSH 的 Live2D 形象舞台与桌宠：内置 Haru 示例、自定义 Cubism 2/3+ 模型加载与缩放/位置控制、页面内可拖动桌宠、可选透明置顶桌面独立桌宠窗口、按对话授权的表情 control prompt，以及默认关闭、需自部署 ASR/TTS 的语音功能。
 - [cm860712ch-cloud/dsh-quick-input](https://github.com/cm860712ch-cloud/dsh-quick-input) — 输入框左侧的九宫格快捷短语面板，高度跟随输入框：点一格就把该条短语以一次可撤销的编辑插入光标处；面板内可就地编辑，每页 9 格、最多 12 页，界面跟随 DSH 语言设置。窗口放不下时退回输入框上方浮层。
@@ -2177,6 +2178,7 @@ dsh plugin --profile web add dshmarket
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) — DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。
 - [zy12342/usage-widget](https://github.com/zy12342/usage-widget) — DSH 侧边栏账户余额快捷查看：显示余额、赠送额度、当前模型和官方高峰 / 空闲计费时段，按余额分四档显示质感，余额过低时提醒。
 - [zztdandan/dsh-opencode-go-quota-settings](https://github.com/zztdandan/dsh-opencode-go-quota-settings) — 在 DSH 设置页显示 OpenCode GO 套餐额度（5 小时滚动、每周、每月），通过同源代理读取官方用量接口；不注册侧栏组件。本插件是 Astervolans/dsh-opencode-go-usage（上游为 yumusb/dsh-opencode-go-usage 的 fork）的改造分支，安装前请先卸载上游插件——两者会各自注册一份 OpenCode GO 设置页，不能同装。
+- [Zzz11042/dsh-research-kit#plugin](https://github.com/Zzz11042/dsh-research-kit/tree/master/plugin) — 面向 DSH 的本地优先研究工具包：注册 kb_grep / kb_list / kb_save 三个模型工具，经由作用域化的 ctx.fs 文件系统服务读写 markdown 知识库（默认 ~/dsh-kb），并附带两个 skill（local-first-research 本地优先研究协议、session-memory 历史会话取证协议）。插件为纯 Node ESM、零运行时依赖，附无框架的 node 测试。通过 plugin_manager 的 install_bundle 安装；不含前端 UI。
 
 ### 🎭 主题与外观
 
@@ -3769,6 +3771,7 @@ dsh plugin --profile web add dshmarket
 - [Libraqg/dsh-workspace-memory](https://github.com/Libraqg/dsh-workspace-memory) — 显式、按项目隔离的记忆交接：新开会话时，经你确认后只调用一次模型，把同一项目里之前的对话整理成有长度上限的摘要，注入到新会话的第一步；不会在后台偷偷调用模型。“记忆”面板可以查看摘要、编辑笔记。
 - [lightporta/dsh-knowledge-center](https://github.com/lightporta/dsh-knowledge-center) — DeepSeek Harness 本地知识库：把工作区与对话附件中的 PDF、Word、Excel、Markdown、TXT、CSV、HTML 文档提炼为 Markdown 知识，提供类 VS Code 预览、按工作区授权，以及检索、读取和入库的模型工具。
 - [linner1224/dsh-video-coursemap](https://github.com/linner1224/dsh-video-coursemap) — 定时观察浏览器前台窗口，识别视频课程并按学科分类，抓取 B 站简介/字幕/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册。
+- [lishicheng2054/dsh-flavor-memory](https://github.com/lishicheng2054/dsh-flavor-memory) — 角色聊天记忆层：人格、语气、关系与摘要分开保存，原文全量归档并按需检索，附带 SillyTavern 角色卡导入和 OpenAI 兼容网关。
 - [LittleBlackTong/dsh-plugin-memory](https://github.com/LittleBlackTong/dsh-plugin-memory) — 带 LLM Wiki 结构与 SOUL 人格文件的长期 markdown 记忆库：会话启动注入 boot 块（默认提问后才注入、且只注入当前激活会话），含 remember/recall/consolidate/forget 工作流、内嵌 memory 技能、pack/unpack 迁移工具，以及空闲时以第一人称主动追忆（recall nudge）的拟人化能力。同时补上记忆库原先缺的“可观测 + 可维护”：按文件分配 boot 预算（索引路由表不再被截断）、自动戳记 last_access（salience 衰减真正生效）、只读记忆健康看板（体量/新鲜度/与 lint 同源的体检）、声明式索引编译器（页面声明 summary:，一条命令重写索引行），可拖动、可滚轮缩放的记忆图谱（页间链接 + 共享 tag）、结构化检索（tag/type/salience/hot/stale 过滤）、针对「尚无内容关系」页面的补链建议，以及以「最该做的 N 件事」收尾的 `checkup` 体检报告。同时把操作细节移到按需加载的技能，boot 注入体量减少约 23%。设置区块现在还有专属侧栏图标（半脑 + 节点——因为设置 shell 不给插件留图标位）和直达本仓库的反馈入口。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：注入消息使用 producer-owned source kind plugin:memory。 v0.11 起设置面板与侧栏 label 跟随 DSH 语言设置（中文「记忆」/英文 "Memory"）；v0.12 新增跨插件共享发言权、按语境微调的语气段与每周成长回顾；v0.13 用 engines.dsh 声明 DSH 兼容范围（官方 0.2.1-rc.5 系列，旧宿主会被闸门拒绝），新增「立即回顾」按钮（POST /api/memory/control，action growth-now，立即发一次成长回顾且仍尊重发言权）、面板可访问性（aria-label、status/alert role、focus-visible 焦点环）与公开的 PROACTIVE-PROTOCOL.md。
 - [LIU118117/dsh-love](https://github.com/LIU118117/dsh-love) — 把每天的聊天过程蒸馏成可更新的角色卡与跨会话感情模块，持续训练角色卡（保留说话习惯与关键记忆）。
 - [liuyuhao1122/dsh-hermes-memory](https://github.com/liuyuhao1122/dsh-hermes-memory) — 为 DeepSeek Harness 提供分层长期记忆，支持自动模型提炼、可追溯的加密会话日志和带校验的记忆压缩。
@@ -7287,6 +7290,7 @@ dsh plugin --profile web add dshmarket
 - [qiaoda2021/dsh-doctor](https://github.com/qiaoda2021/dsh-doctor) — 给 DSH 做体检，告诉你哪里有问题；你确认后再备份和修复。
 - [qimen039-code/dsh-consumer-audit](https://github.com/qimen039-code/dsh-consumer-audit) — 审计 DSH profile 里没有消费者的能力：清点已声明的组成行，统计每个已注册工具与 skill 在会话日志里真正被调用的次数，把「发起过调用」与「返回了结果」分开，报告没有观察到消费者的那些；并附一份固定「完成声明」证据链格式的 skill。
 - [qinyre/dsh-plugin-capabilities](https://github.com/qinyre/dsh-plugin-capabilities) — 设置页的「技能与 MCP」分区：技能目录实时监听，可浏览、新建、编辑、删除技能，用 frontmatter 策略键开关任何落在磁盘上的技能；本地目录或 GitHub 仓库可注册为额外技能扫描根；profile 的 MCP 服务器行在页面上编辑，可从 Claude Code / Codex 配置导入；另带精选技能仓库与 MCP 服务器的市场。
+- [qiongqi-empty/dsh-cookie-fix](https://github.com/qiongqi-empty/dsh-cookie-fix) — 在每次启动的令牌交换中删除多余的 dsh-auth-* 会话 cookie，让 DeepSeek Harness 桌面端的 cookie 数量保持在 3 条以内，避免随机端口累积达到 16 KiB 请求头上限而出现 HTTP 431 启动失败。
 - [qtaik/dsh-noname-kit](https://github.com/qtaik/dsh-noname-kit) — 无名杀扩展开发工坊。AI 在确认协议、校验门禁与区块化写入的保护下编写武将技能与卡牌扩展。
 - [qwq1999/dsh-ide-database](https://github.com/qwq1999/dsh-ide-database) — 仿 JetBrains Database 的数据源树与 SQL/Redis 控制台，附 15 个 agent 工具。SQL 需本机 Java 8+，Redis 不需要。
 - [qyjqio/dsh-cursor-toolkit#llm-probe](https://github.com/qyjqio/dsh-cursor-toolkit/tree/main/packages/dsh-llm-probe) — 列出运行中 DSH 进程真实注册的 LLM 路由，并可跑一次真实流式调用。
