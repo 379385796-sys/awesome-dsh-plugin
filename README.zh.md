@@ -4133,6 +4133,7 @@ dsh plugin --profile web add dshmarket
 - [BroWhitebyte/dsh-plugin-baiguangda-style](https://github.com/BroWhitebyte/dsh-plugin-baiguangda-style) — 把机核网编辑白广大的中文文风做成可执行的判据：注册一份 40 KB 风格技能，并提供 style_lint / style_audit / style_rules 三个工具——4 条硬错误 + 27 条警告（空转转折、金句通胀、冗余量词、段落过于均匀、孤证数字、AI 口头禅等），阈值按 444 篇 / 80.2 万字语料标定；设置页带总开关、单篇与批量试跑、阈值 JSON 覆盖。
 - [BuffMcBigHuge/dsh-brave-search](https://github.com/BuffMcBigHuge/dsh-brave-search) — 把 Brave 注册为 web_search 的搜索提供方，API Key 依次从 DSH 凭证库、$DSH_HOME/.credentials.yaml 或环境变量读取。无设置卡片、无备用引擎：每次搜索向 Brave Web Search API 发起一次请求。
 - [buhuikongpan/dsh-win-gitbash](https://github.com/buhuikongpan/dsh-win-gitbash) — 面向 Windows 的 Git Bash 工具：通过 Git for Windows 自带的 bash 执行命令，支持超时、沙箱、输出截断与后台任务，替代卡顿的 pwsh 工具与仅限 WSL 的 bash 工具。
+- [BuvkB/dsh-ugreen-nas](https://github.com/BuvkB/dsh-ugreen-nas) — 绿联 NAS（UGOS Pro）连接器：通过访问令牌调用 OpenCLI，59 个工具覆盖全部 70 项令牌权限——文件、存储、任务指标、Docker、下载、应用管理、控制面板与全局搜索，按令牌实际授予自动增减。
 - [bwndlct/dsh-session-audit](https://github.com/bwndlct/dsh-session-audit) — 会话执行分析：步骤、工具调用、失败、重复动作、token 用量与验证信号，输出 text/Markdown/JSON 报告。
 - [bx33661/dsh-omv](https://github.com/bx33661/dsh-omv) — 面向 DeepSeek Harness 的证据优先漏洞研究工作台：原生审计视图、29 个 OMV 工具、Evidence.v1 Finding、可复现 Run、Campaign 工作流和隔离 PoC 证据。
 - [bxzfxl/dsh-config-sync](https://github.com/bxzfxl/dsh-config-sync) — 基于私有 Git 仓库的 DSH 多端配置同步——把设置、插件清单、锁文件与技能纳管到私有仓库，设置页一键捕获、应用、拉取与回滚，并按 pnpm-lock 确定性重建插件依赖。
@@ -6039,6 +6040,7 @@ dsh plugin --profile web add dshmarket
 - [yangdongzhen590/dsh-knj-extension-center](https://github.com/yangdongzhen590/dsh-knj-extension-center) — 技能中心：按区域浏览技能、从 zip 安装，并支持启用停用、卸载、回收站恢复与搜索。
 - [yanglaofish/dsh-skill-manager](https://github.com/yanglaofish/dsh-skill-manager) — DeepSeek Harness 技能生命周期管理：技能库（纯技能池）、工作区启用白名单、会话勾选三层模型；Web 设置面板与对话页内嵌视图，支持技能文件浏览/编辑、zip 与文件夹批量导入、引擎实际加载校验。
 - [Yanshi-Robotics/yanshifu-plugin-cn](https://github.com/Yanshi-Robotics/yanshifu-plugin-cn) — 为《一起手搓机器人》SO-101 课程提供三个技能：yanshifu 读取学员的项目文件，判断进度并建议下一步；ask 根据四份配套资料回答问题；update 检查并更新本地配套资料。
+- [yeemio/dsh-owlrunkit](https://github.com/yeemio/dsh-owlrunkit) — 把 OwlCoda RunKit 技能加入 DSH 技能目录：目标、WorkItem、候选身份、验证回执、交接和恢复保存在项目工件中。只安装指令；项目本地的 owlrunkit CLI 仍需单独安装。
 - [yinhcao/yinchao-ai-music-skill](https://github.com/yinhcao/yinchao-ai-music-skill) — 根据提示词或歌词生成完整 AI 歌曲和 BGM，并支持参考音频创作与歌曲续写。
 - [Ylight-cpu/dsh-creative-studio](https://github.com/Ylight-cpu/dsh-creative-studio) — 面向 DeepSeek Harness 的美工与视频剪辑工具包——可分档抠图、局部重绘改图、标题与 logo 合成、平台规格批量导出与图片体检；视频侧含 AI 抠像换背景（RVM ONNX，另有绿幕色键路径）、淡入/滑入/打字机/卡拉OK 动效文字、53 种转场与风格化变体、光效与调色预设（支持 LUT），以及素材通览、精确裁切、字幕烧入、配乐混音与平台规格导出；通过内置引导脚本自备本地 Python 运行时。
 - [YLL-KB/dsh-video-to-notes](https://github.com/YLL-KB/dsh-video-to-notes) — 把课程、讲座、教程、会议、演讲等视频整理成结构化学习笔记：用 ffmpeg 提取音轨、Whisper 语音转文字，再生成带分段大纲、重点标记和速查卡的笔记。
