@@ -946,7 +946,7 @@ dsh plugin --profile web add dshmarket
 - [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) — 会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。
 - [lucas07814-hub/dsh-pet-guardian-dragon](https://github.com/lucas07814-hub/dsh-pet-guardian-dragon) — 面向 DSH Web 界面的可拖拽桌宠，支持互动动作与成长状态。
 - [lucky01222/dsh-workbench-shell](https://github.com/lucky01222/dsh-workbench-shell) — 为 DSH Web 提供 56px 紧凑应用导航栏、独立对话列表与侧栏展开/收起控制；并在对话模型菜单和 /model 中筛除向量、重排及生图/视频型号。
-- [LUgABeEEE/dsh-adapt-packs](https://github.com/LUgABeEEE/dsh-adapt-packs) — 第三方 DSH 插件面板的手机适配包：44px 触控地板、宽度回收、外壳命中区与浮动控件让位；附设置页一键装/卸与插件兼容清单。
+- [LUgABeEEE/dsh-adapt-packs](https://github.com/LUgABeEEE/dsh-adapt-packs) — 第三方 DSH 插件面板的手机适配包：44px 触控地板、宽度回收、外壳命中区与浮动控件让位；由 dsh-mobile 插件从其 extensions 目录加载（须先装 dsh-mobile 才会生效），附设置页一键装/卸与插件兼容清单。
 - [LUgABeEEE/dsh-global-todo](https://github.com/LUgABeEEE/dsh-global-todo) — 侧边栏里的全局跨会话待办清单，人和 agent 共用同一份：十个 global_todo_* 工具可在任意会话中新增、批量抓取、修改、挂文档与链接、追加进展记录、标记完成；每条待办可按四种方式交给 agent 会话，派发结果记回条目本身。清单存成一个 JSON 文件。
 - [LUgABeEEE/dsh-sidebar-density](https://github.com/LUgABeEEE/dsh-sidebar-density) — 轻量级侧栏 UI：五个折叠开关、三档密度预设与三档宽度预设，入口收在底部一行与设置分区；无依赖、无后台服务。
 - [LUMIAO9527/DSH-suggestions](https://github.com/LUMIAO9527/DSH-suggestions) — 根据会话生成下一条消息建议并优化草稿，支持候选翻页、快捷键录制和配套 MCP 工具。
@@ -1841,7 +1841,6 @@ dsh plugin --profile web add dshmarket
 - [fancr-code/dsh-plugin-usage-meter](https://github.com/fancr-code/dsh-plugin-usage-meter) — 本地优先的用量与费用仪表：输入框下方按钮显示实时费用与余额，面板含按模型堆叠的当日/近 7 天柱状图（按刊例价生效区间计价、官方定价页每日同步）、本月消耗段位与画布分享卡片、30/50/85% 上下文压力三档预警与一键 /compact、预算提醒，以及面板内 npm 检查更新与一键更新。
 - [feibi-mochi/deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) — DeepSeek Harness 监控、提醒、充值与会话控制中心：查看官方余额、本会话花费与 token、第三方 token 合计，提供完成提醒、官方充值、灵活布局及 Agent 辅助的会话控制。
 - [FengHuoLinShan/dsh-plugin-llm-balance](https://github.com/FengHuoLinShan/dsh-plugin-llm-balance) — DSH 余额与配额悬浮卡片：常驻显示最近使用的最多 3 个 provider，支持 DeepSeek、Moonshot、Kimi For Coding、OpenAI Codex 和 OpenCode Go；自动发现配置，展示配额窗口与重置时间，并支持分档着色、拖动和自动刷新。
-- [FenrirCait/dsh-fail-guard](https://github.com/FenrirCait/dsh-fail-guard) — 同一工具连续失败达阈值时叫停。不是再试一次，而是推送一条四部分停手指令：试过什么、完整错误原文、初判原因、需要用户做什么。判定读真实工具结果（isError 或 shell 退出码非零），通过 agent.steer 回灌，让 agent 把它当成收到的消息而不是日志。
 - [fishxcode/dsh-plugin-deepseek-balance](https://github.com/fishxcode/dsh-plugin-deepseek-balance) — 在 DSH Web 设置中展示 DeepSeek API 余额、余额趋势与每日用量图表。
 - [Floating-Dreaming/dsh-minimax-usage#trusted-plugin](https://github.com/Floating-Dreaming/dsh-minimax-usage/tree/main/trusted-plugin) — 在 DSH 设置页「用量」section 展示 MiniMax Token Plan 的 5 小时 / 周窗口用量（带重置倒计时）、单模型明细与视频赠送额度；通过 trusted plugin 调 `/v1/token_plan/remains` 拿 key，未配置 key 时整段 section 自动隐藏。MIT。
 - [Flonger/dsh-balance-vision](https://github.com/Flonger/dsh-balance-vision) — 输入框下方实时显示 DeepSeek 余额与本会话消耗，内置官方工作日谷峰计价（周一至周五 9-12/14-18 峰时、周末全天谷时）与 deepseek-v4-flash-vision-exp 视觉模型（按 flash 同价计费，图片按 token 计费，单图最多 384 tokens）。
@@ -2129,7 +2128,7 @@ dsh plugin --profile web add dshmarket
 - [yangyongzhen/dsh-session-report](https://github.com/yangyongzhen/dsh-session-report) — 会话成本与耗时报表：tokens / 缓存命中 / 耗时。
 - [yanlijin/dsh-qwen-balance](https://github.com/yanlijin/dsh-qwen-balance) — DSH Web 侧栏「设置」行上方的阿里云 / Qwen 余额卡片：经 BSS OpenAPI 显示账户可用额度与现金余额、代金券余额与到期日（含学生 300 元券），以及 OpenAI 兼容中转站额度。官方百炼 / DashScope 的 sk- key 没有任何余额接口，想看真金白银与代金券必须用带 bss:DescribeCoupons + bss:DescribeAcccount（建议只挂 AliyunBSSReadOnlyAccess）的阿里云 AccessKey；密钥只留在宿主进程，浏览器只拿到掩码后的 AccessKey ID，/api/dsh-qwen-balance/* 仅允许环回访问。
 - [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) — 多供应商用量看板：按供应商/模型统计 Token 与日期下钻，统一展示账户余额，并追踪 OpenCode Go / Z.ai 订阅额度。
-- [Yeoksin/dsh-usage-wallet](https://github.com/Yeoksin/dsh-usage-wallet) — 侧边栏余额与配额卡片，显示当前模型提供商的账户读数：DeepSeek、Moonshot、Z.ai、OpenRouter、Kimi、MiniMax、OpenCode；并为 qwen-token-plan 读取阿里云代金券余额（BSS OpenAPI + AccessKey），为小米 MiMo 读取控制台余额与套餐用量（控制台 Cookie）。另提供各提供商查询状态页与每 token 单价。
+- [Yeoksin/dsh-usage-wallet](https://github.com/Yeoksin/dsh-usage-wallet) — dougen/dsh-deepseek-usage 的非官方分支（基线 v0.16.0）：侧边栏余额与配额卡片，显示当前模型提供商的账户读数：DeepSeek、Moonshot、Z.ai、OpenRouter、Kimi、MiniMax、OpenCode；并为 qwen-token-plan 读取阿里云代金券余额（BSS OpenAPI + AccessKey），为小米 MiMo 读取控制台余额与套餐用量（控制台 Cookie）。另提供各提供商查询状态页与每 token 单价。不要与上游 dsh-deepseek-usage 同装：两者会渲染同一张侧边栏卡片。
 - [yflmq001/dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) — 按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。
 - [Yhx888/dsh-free-egg-credits](https://github.com/Yhx888/dsh-free-egg-credits) — 在 DSH 侧边栏看 WorkBuddy / Qoder 账号积分、今日额度、签到状态与每轮消耗（WorkBuddy 已知单价时按输入 / 缓存 / 输出分类型折算）；配置 new-api 后可一键切换优先消耗平台。需本机运行 WorkBuddy2API 或 Qoder 网关。
 - [yijiezhong/dsh-output-setting](https://github.com/yijiezhong/dsh-output-setting) — 自动展开思考与工具卡片，调整代码块字号与行距，并可选择模型输出语言（自动、中文或 English）。
@@ -6112,6 +6111,7 @@ dsh plugin --profile web add dshmarket
 - [february2015/dsh-taskswarm](https://github.com/february2015/dsh-taskswarm) — TaskPlane 的 DSH 移植版：按依赖分波、多 lane 并行执行（git worktree 隔离），任务包 + 跨模型评审 + 崩溃可恢复。
 - [FengHuoLinShan/novelAssist-dsh#novelcraft-dsh](https://github.com/FengHuoLinShan/novelAssist-dsh/tree/main/plugin) — 长篇小说写作插件：每本书一个 git 仓库，当前 39 个 DSH 领域工具 + Web 写作台；深度导入产候选草稿、AI 采用类写入正式资产前必过审批、确定性连续性检查（报告型）。独立开源（MIT），非 DeepSeek 官方产品；需 Node ≥ 24.11.0，当前适配 DSH 0.1.2-rc.1。
 - [fengt8291-lab/dsh-first-principles#plugin](https://github.com/fengt8291-lab/dsh-first-principles/tree/main/plugin) — 可机械核对的第一性原理台账：事实必须落回真实的 文件:行 并逐字引用那里的话，假设必须写明什么情况下它错了，结论不得依赖一个永不回来复查的假设；台账可带复查日期、置信度与止损条件。附带校验工具、/fp 命令族、不可逆命令前的可选闸门，以及列出每轮修掉哪些错误码的面板。
+- [FenrirCait/dsh-fail-guard](https://github.com/FenrirCait/dsh-fail-guard) — 同一工具连续失败达阈值时叫停。不是再试一次，而是推送一条四部分停手指令：试过什么、完整错误原文、初判原因、需要用户做什么。判定读真实工具结果（isError 或 shell 退出码非零），通过 agent.steer 回灌，让 agent 把它当成收到的消息而不是日志。
 - [fhidalgodev/dsh-odoo-sdd](https://github.com/fhidalgodev/dsh-odoo-sdd) — 面向 Odoo 的规范驱动开发流水线：15 个工具把需求从不可变规范推进到架构、再到模块代码或线上配置，最终要求一个由真实 Odoo 实例证据支撑的持久判定；闸门 fail-closed，批量操作需在声明的环境中经人工批准，复用 Odoo 自带的 CSV／Excel 导入器，并有一份可回滚本插件所写数据的日志。
 - [Flamencoff/dsh-xiaozhushou](https://github.com/Flamencoff/dsh-xiaozhushou) — 本地工作任务看板，带秘书、CEO、史官三个角色和鲸鱼娘浮窗，数据保存在本机。
 - [Fnckerpoi/dsh-plugin-nexus-sdlc](https://github.com/Fnckerpoi/dsh-plugin-nexus-sdlc) — 声明规范驱动研发预设，包含中文人格与四个 Claude Code/Codex 静态委派工具，用于规划、实现、审查与知识提炼；角色由提示词引导，并非自动状态机。
