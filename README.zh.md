@@ -1409,6 +1409,7 @@ dsh plugin --profile web add dshmarket
 - [Tracest/dsh-session-inbox](https://github.com/Tracest/dsh-session-inbox) — 顶部工具区与原布局切换，上方直接查看会话，下方收纳工作中与已整理；支持原生菜单、搜索高亮、键盘操作及整理备份。已验证 macOS，界面为中文。
 - [tsonglew/dsh-media-preview](https://github.com/tsonglew/dsh-media-preview) — better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。
 - [tsonglew/dsh-workspace-search](https://github.com/tsonglew/dsh-workspace-search) — VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。
+- [Tsutsutsuu/dsh-quote-selection](https://github.com/Tsutsutsuu/dsh-quote-selection) — 在对话里框选文字后右键引用：引用以原子标签进入输入框，发送后显示为可折叠的引用卡；模型拿到的始终是带消息角色、轮次、段落与字符区间的完整引用块。
 - [ttmouse/dsh-model-picker](https://github.com/ttmouse/dsh-model-picker) — 顶替 DSH Web 编辑器模型座位的模型选择器：检索优先的弹层，左栏是供应商索引、点击滚动右侧分组列表，收藏组固定在首位，用图片图标区分原生与桥接的视觉输入，点触发器右区单独打开推理档位面板。
 - [ttmouse/dsh-recent](https://github.com/ttmouse/dsh-recent) — 在 DSH Web 侧边栏的工作区列表下面加一个「最近」区块，把所有工作区的最新会话平铺成一条时间线，行与悬停卡片复用外壳自己渲染的会话行，滚到底继续加载更早的会话；同时把工作区列表本身折叠为最近有记录的 5 个文件夹。需要 DSH ^0.2.0-rc.1。
 - [tumi-huakai/dsh-plugin-meow-speech](https://github.com/tumi-huakai/dsh-plugin-meow-speech) — 显示层文本替换：自定义消息中任意文本的界面显示而不改动真实对话，支持逐条整词匹配、长词优先与代码块保护。
@@ -5510,7 +5511,7 @@ dsh plugin --profile web add dshmarket
 - [TaurusWood/dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot) — DSH 版 Codex Appshots：全局快捷键精准捕获当前工作窗口，零摩擦挂载至 Composer 作为上下文向 Agent 提问。
 - [taxueseek/taxue-dsh-artisan](https://github.com/taxueseek/taxue-dsh-artisan) — DSH 一体化视觉创作工具链：提示词反推与审计优化，多供应商生图，支持异步后台出图。
 - [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) — 为纯文本模型添加 PaddleOCR 视觉能力，支持 Agnes、DeepSeek、MiniMax、GLM、Mimo，支持本地文件与 URL。每日 2 万页免费额度；需先申请 PaddleOCR API Token（免费，审核约 1-3 个工作日）。
-- [Tests4gptplay/dsh-video-vision](https://github.com/Tests4gptplay/dsh-video-vision) — 让 DSH 中的 AI 结合时间戳画面、音频与歌词理解 B 站、YouTube 和本地视频，支持浏览器登录态导入、可选的内置浏览器同步、接续观看、站点解析扩展和原生缓存管理。需要把 FFmpeg 与 ffprobe 放进 PATH，或在插件设置中填写程序路径。
+- [Tests4gptplay/dsh-video-vision](https://github.com/Tests4gptplay/dsh-video-vision) — 让 DSH 中的 AI 结合时间戳画面、音频与歌词理解 B 站、YouTube 和本地视频，支持浏览器登录态导入与加密保存、接续观看、站点解析扩展和原生缓存管理。需要把 FFmpeg 与 ffprobe 放进 PATH，或在插件设置中填写程序路径。
 - [thanderming/dsh-auto-vision](https://github.com/thanderming/dsh-auto-vision) — 主模型不能识别图片时，自动改用同一 API 下可识别图片的模型读取图片，再把描述反馈给主模型。
 - [TZHR-invest/dsh-plugins#dsh-vision-tool](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-vision) — Agent 可调用的视觉工具：通过你配置的任意 OpenAI 兼容视觉端点描述本地图片，支持多模型交叉核对，不内置任何密钥。
 - [vitas/dsh-ocr-free](https://github.com/vitas/dsh-ocr-free) — 在 macOS 上使用 Apple Vision 的本地 OCR：从截图、照片和扫描件中读取文字，无需安装、无需联网、无需 API 密钥。
@@ -7906,6 +7907,7 @@ dsh plugin --profile web add dshmarket
 - [somebdly/dsh-docker](https://github.com/somebdly/dsh-docker) — dsh-docker 是 DeepSeek Harness Web 的 Docker 管理面板插件：支持本机 CLI 与 SSH 远端多目标一键切换，统一管理 Docker MCP（部署/移除/搜索官方 Catalog/启停重启 Gateway/自定义部署）与容器镜像（启停/删除/日志/详情/交互式终端/新建/构建/导入）。凭据经 Windows DPAPI 加密存储，HTTP 仅限本机 loopback 访问，命令参数白名单防注入；免构建、纯 ESM、Client 零依赖。
 - [songofhawk/dsh-alpha](https://github.com/songofhawk/dsh-alpha) — DSH 的多机多 Agent 编排与控制平台：发现各设备上的 Agent 与工作区，按机器、仓库、能力和负载将任务路由到本地或远程 Agent Runtime，统一回传进度、审批与结果，并在断线后恢复持久任务。
 - [SOVLOOKUP/dsh-tunnel-preview](https://github.com/SOVLOOKUP/dsh-tunnel-preview) — 通过 Cloudflare Tunnel 将本地监听端口暴露为公网 HTTPS 预览链接，支持自动管理 DNS 记录与一键模板创建 API Token。
+- [ssy-in/dsh-my-phone](https://github.com/ssy-in/dsh-my-phone) — 让手机连上本机的 DeepSeek Harness 桌面版：局域网或 Cloudflare 隧道二维码配对，实时消息列表与授权提醒，桌面悬浮球。
 - [sunChargedd/dsh-plugins#dsh-ssh-manage](https://github.com/sunChargedd/dsh-plugins/tree/main/dsh-ssh-manage) — DSH 的 SSH 主机管理插件：浏览 ~/.ssh/config，保存 AES-256-GCM 加密密码，执行批量命令与 SFTP，并在可保持的侧边栏标签页中打开交互式 PTY 终端。
 - [sunrulin123/dsh-community-web-ui](https://github.com/sunrulin123/dsh-community-web-ui) — DeepSeek Harness 独立远程 Web UI：适配手机视口、软键盘与触控热区，同时保持原生桌面端界面不变。
 - [swarm-apps/dsh-swarmdrop](https://github.com/swarm-apps/dsh-swarmdrop) — 在 agent 和你自己的手机之间开一条设备通道：agent 把刚产出的文件发过去，手机传回来的东西可以在输入框里 @ 引用。底层经 SwarmDrop CLI 走端到端加密的 P2P，不需要账号，也不需要公网 IP；节点状态、已配对设备与扫码配对都在侧边栏面板里。
