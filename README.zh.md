@@ -1758,6 +1758,7 @@ dsh plugin --profile web add dshmarket
 - [1569126506-sudo/dsh-team-cost](https://github.com/1569126506-sudo/dsh-team-cost) — 团队成本管家：按成员/工作空间计量每次模型调用的 token 与费用（含子代理），内置 DeepSeek 2026-09 价目表与自定义价格覆盖，成员预算热更新、阈值 Webhook 告警、可选超支拦截，提供成本报表工具与 CSV 导出，并在设置页提供团队成本看板。
 - [162568316/dsh-tokenrhythm-bill](https://github.com/162568316/dsh-tokenrhythm-bill) — 基元律动费用中心：账户余额与限时额度、按分类筛选的模型价格卡（含折扣价）、服务状态与平台密钥管理，支持平台账号或 Cookie 登录，凭据存本机 host。
 - [1687210989/agent-clinic](https://github.com/1687210989/agent-clinic) — DSH 会话日志的只读体检诊所：22 项具名诊断（token 浪费、重试与失败循环、上下文膨胀、跨会话失忆、闲置的 MCP 服务器与 skill 等），每条都附可复核的证据定位符（如 session.v4.jsonl.zstd#L101-L110）；每个问题给一条可执行处方（profile patch 片段或命令，含当前值到建议值、风险与验证方式），并支持标记「已拒绝」让该处方不再出现（报告会写明是你撤掉的）。零依赖、默认零外发、会话文件只读。
+- [19952730389/dsh-app-updater](https://github.com/19952730389/dsh-app-updater) — 检测本机已安装应用里哪些有可用新版本，并一键从各软件官网下载完整安装包静默更新；Windows 走 winget、macOS 走 Homebrew cask，并按本机 ARM64 / x64 架构挑选对应安装包。
 - [1HelloMan1/dsh-usage-dashboard-plus](https://github.com/1HelloMan1/dsh-usage-dashboard-plus) — 显示 DeepSeek 余额与今日花费估算，合并外部视觉调用 JSONL 记录，并提供含模型统计、TTFT、缓存率、调用日志、费用估算、筛选与 CSV 导出的会话看板。
 - [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) — DSH Web 实时 token 计费插件：官网人民币价直接计费、高峰/错峰自动切换、价格实时跟随官网、可视化自定义模型价格、多币种兜底。
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) — DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。
@@ -2303,6 +2304,7 @@ dsh plugin --profile web add dshmarket
 - [jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin) — 为 DSH UI 提供完全自定义的主题框架，默认主题为原神魈。
 - [jizenghui81/dsh-huashu-pixel](https://github.com/jizenghui81/dsh-huashu-pixel) — DSH Web 界面的暖调像素主题：亮色暖米白纸面、暗色街机磷光；方角硬描边与偏移投影的像素控件、随包发布的像素字体，流式输出与状态变化带方块光标、扫描线与硬切闪帧；强度（轻/标准/浓）、动效、扫描线、像素字体四组档位在「设置 → 通用」里切换，输出时输入框上沿有一条像素加载条。
 - [John-20260101/dsh-theme-atlas](https://github.com/John-20260101/dsh-theme-atlas) — DeepSeek Harness 网页端的九套皮肤：六套材质研究 + 三套乐山照片皮肤（三江夜、凌云晚照、峨眉夜雾，照片直接作为壁纸）；一套引擎由六个输入色推导全部 119 个 --dsw-* 别名 token，含深浅双版。
+- [John-20260101/dsh-theme-leshan](https://github.com/John-20260101/dsh-theme-leshan) — 三套乐山照片皮肤：三江夜、凌云晚照、峨眉夜雾。照片同时铺在窗口和对话画布上，按明暗外观压罩层；每套皮肤由 6 个输入色推导全部 119 个 --dsw-* 别名 token，Alt+K 轮换皮肤，选择记在浏览器本地。
 - [JohnnyTing/dsh-official-homepage-theme](https://github.com/JohnnyTing/dsh-official-homepage-theme) — 复刻 DeepSeek Harness 首页视觉的 Web 主题，提供流体背景、鼠标弹性网格、动态小鱼与可调节效果。
 - [johnsonspirit/ocean-wave-theme](https://github.com/johnsonspirit/ocean-wave-theme) — 整个应用背景铺设动态海浪特效，一条鲸鱼在页面后面游泳，界面各层变为半透明。
 - [Jonah-Wu23/dsh-bg-carousel](https://github.com/Jonah-Wu23/dsh-bg-carousel) — 把媒体目录中的图片与视频自动轮换为 DSH 界面背景，面板可调轮播间隔与界面透明度。
