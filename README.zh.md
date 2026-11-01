@@ -5203,6 +5203,7 @@ dsh plugin --profile web add dshmarket
 - [CREAIT-nl/dsh-plugins#web-search-searxng](https://github.com/CREAIT-nl/dsh-plugins/tree/main/web-search-searxng) — 把 web_search 指向自建的 SearXNG 实例而非原生搜索路由：自动翻页直到满足 maxResults，并在引擎失败时报告覆盖不全，避免把稀少的结果误读成网上本就没有内容。
 - [cslkkl/dsh-web-annotator](https://github.com/cslkkl/dsh-web-annotator) — 在 Harness 原有 Browser 内批注网页：点选或框选后就地评论、提问，可把标记截图或 DOM 定位资料发给当前会话；启用期间替换官方 Browser、Chat 与 Layout 提供方，精确支持 Harness 0.2.1-alpha.2。
 - [d342784178/dsh-opencli](https://github.com/d342784178/dsh-opencli) — 把本机 OpenCLI daemon 当常驻服务直连的 DSH 浏览器工具，替代「每条命令起一次 opencli CLI」的冷启动：oc_status、oc_exec、oc_navigate、oc_snapshot、oc_tabs 五个工具，每个 session 一个常驻自动化标签页。需要本机运行 OpenCLI daemon，并让浏览器里的 OpenCLI 扩展保持连接。
+- [dafeiyu1314520/dsh-douyin-agent](https://github.com/dafeiyu1314520/dsh-douyin-agent) — 在专用浏览器里自主刷抖音：采样决策、抽帧拼故事板、带时间的高赞弹幕、人格与兴趣记忆、观看日报，全程受每日时段与额度限制。
 - [DDDMUC/dsh-free-search](https://github.com/DDDMUC/dsh-free-search) — DSH 免费搜索插件：7 个引擎（DuckDuckGo/Bing/SearXNG 免费 + Exa/Perplexity/DeepSeek 付费）、自动回退、设置页 UI（API key 输入 + 官网链接）、web_fetch、引擎测试工具。
 - [Decodo/dsh-web-fetch](https://github.com/Decodo/dsh-web-fetch) — 把内置 web_fetch 工具的抓取后端换成 Decodo Web Data API：默认返回 Markdown，并把 fetchProvider 固定为 decodo，可配置单进程抓取上限；需要 Decodo API Key，web_search 不受影响。
 - [delef/dsh-free-web-search](https://github.com/delef/dsh-free-web-search) — 免费网页搜索，支持 10 个引擎（Bing/DuckDuckGo/SearXNG/AnySearch 免费，Exa/Tavily/Keenable/Perplexity/DeepSeek 付费）、自动回退、按时间筛选的高级搜索、平台搜索（GitHub/Reddit）、网页内容抓取、LRU 缓存和设置界面。基本使用无需 API 密钥。
@@ -5710,6 +5711,7 @@ dsh plugin --profile web add dshmarket
 - [sd0426301x-dotcom/dsh-knowledge-base](https://github.com/sd0426301x-dotcom/dsh-knowledge-base) — 本地优先的 DSH 工作区侧边栏知识库：索引项目、文档和插件，自动归类，支持搜索、文件预览和可编辑笔记；数据保存在工作区。
 - [simikangtao/dsh-storyboard](https://github.com/simikangtao/dsh-storyboard) — 对话收尾可视化故事板：storyboard 工具把 JSON 规范渲染为自包含 HTML 卡片（内嵌 SVG 流程图、编号步骤、事实网格、时间线），写入 ~/.dsh/storyboard/<session>/ 并在侧边栏打开；系统提示词段落与 /storyboard 命令触发生成。纯服务端、零运行时依赖。
 - [SkanderBog/dsh-pdf-reader](https://github.com/SkanderBog/dsh-pdf-reader) — 读取和搜索本地 PDF 并提供页码引用，将页面渲染为图片，可用 Tesseract 对扫描页或混合页面进行 OCR；需要 Poppler。
+- [SongFengManZhu/dsh-deep-reading-wl](https://github.com/SongFengManZhu/dsh-deep-reading-wl) — 扫描版教材流水线：OCR提速5倍，先出骨架地图，再按章阅读。
 - [STARDUSTLC666/dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) — 演示文稿技能与工具：一句话或一篇文档生成 HTML 放映与可编辑 PPTX，7 种页型（含金句与原生 PPTX 表格），演讲者备注（HTML 按 S 呼出 + PPTX 原生备注页），内置 5 套主题，可配置默认主题/语言，中英双语。面板内置 4 步首次使用引导，看一次后不再出现。
 - [sudoprivacy/dsh-shareone-plugin](https://github.com/sudoprivacy/dsh-shareone-plugin) — 将 TXT、Markdown、HTML、PDF、Word 和 PowerPoint 文件发布为 ShareOne 分享链接，支持访问密码、水印、文本页面更新和 TXT/Markdown/HTML 评论。
 - [SuperstructureJH/dsh-workbuddy-ppt](https://github.com/SuperstructureJH/dsh-workbuddy-ppt) — 在 DSH 中使用包内编排 Skill、确定性 PPTD 场景检查和原生 PowerPoint 对象生成可编辑 PPTX，并在本地交付 PPTD 源项目。
