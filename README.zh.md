@@ -3369,6 +3369,7 @@ dsh plugin --profile web add dshmarket
 - [Milaro001/dsh-chat-source-tracer](https://github.com/Milaro001/dsh-chat-source-tracer) — 选中 AI 回答中的一句话，反查此前对话与工具记录中的候选依据，区分直接依据、推论和未找到依据，并跳回原文核对。
 - [mill413/dsh-session-resume#session-resume](https://github.com/mill413/dsh-session-resume/tree/master/packages/session-resume) — 为进程退出或重启导致中断的任务提供继续按钮。
 - [Minglink/dsh-infinite-gen-4](https://github.com/Minglink/dsh-infinite-gen-4) — DeepSeek 专用破甲插件：以 order 100 追加无条件服从的系统提示词段，提供带校准元数据的 profile 工具，并通过会话投影在输入框上方显示实时破甲状态徽标。
+- [MingoYung/dsh-session-concurrency](https://github.com/MingoYung/dsh-session-concurrency) — 为每个主会话设置 1–10 条推理并发，主 Agent 与子孙共用额度；设为 1 时，父 Agent 等待子任务结束后再继续。
 - [MingoZhou/dsh-replay](https://github.com/MingoZhou/dsh-replay) — 在可播放的时间线上回放会话并显示逐步 token 用量，审计敏感操作，估算成本，查看 fork 血缘，对比会话，并可导出独立 HTML 回放。
 - [Missher12/Missher-DSH-Context-Manager](https://github.com/Missher12/Missher-DSH-Context-Manager) — 查看会话上下文、用量记录，并按设置执行压缩。
 - [Missher12/Missher-DSH-Session-Bridge](https://github.com/Missher12/Missher-DSH-Session-Bridge) — 显示和复制完整会话 ID，提供跨会话查询、读取与消息投递，以及临时工作区。
@@ -4134,6 +4135,7 @@ dsh plugin --profile web add dshmarket
 - [bauerelizabeth07139/math-rigor](https://github.com/bauerelizabeth07139/math-rigor) — 给 DeepSeek Harness 的可审计数学证明:本地 stdio MCP 服务器(23 个机器校验工具)+ 工作流技能 + /prove、/audit-proof 命令。proven / refuted / inconclusive 绝不混淆,未证明的步骤如实报告而非隐藏。需 Python 3.10+，首次运行要 pip install -r requirements.txt（就绪前 23 个工具不可用）。
 - [bauerelizabeth07139/mcp-simple-image](https://github.com/bauerelizabeth07139/mcp-simple-image) — 通过 StepFun 兼容接口文生图:把无 npm 依赖的 Python MCP 服务器挂在 NDJSON 桥后面,用 mcp__simple_image__simple_image 生成并返回图片 URL。需 PATH 上有 Python 3.8+ 并设置 STEP_API_KEY。
 - [bauerelizabeth07139/opencode-tokenrhythm-image-mcp](https://github.com/bauerelizabeth07139/opencode-tokenrhythm-image-mcp) — 用 TokenRhythm 生成图片:把无 npm 依赖的 Python stdio MCP 服务器挂成 mcp__tokenrhythm_image__generate_image,用 qwen-image-2.0 或 wan2.7-image 生成并存到你指定的目录。需 PATH 上有 Python 3.8+ 并设置 TOKENRHYTHM_API_KEY。
+- [BeatAPI/beatapi-agent-plugin#dsh-geo](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-geo) — 通过工作区权限受限的 MCP Key 连接已有本地 BeatGEO，操作品牌、AI 可见度证据和草稿；附带连接诊断与同品牌 SEO 页面操作 Skill。
 - [BeatAPI/beatapi-agent-plugin#dsh-social](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-social) — 提供社媒能力发现、价格预览、确认后读取、历史结果取回及来源表格；付费读取需要 BeatAPI key。
 - [Beatther-c/dsh-api-client](https://github.com/Beatther-c/dsh-api-client) — DeepSeek Harness 的 Agent 原生 API Client：Postman 级调试 UI（右键菜单与完整键盘导航的请求树、可调宽侧栏、自动生成 Header 分层预览——逐项可停用、敏感值恒脱敏），六个 api_client_* Agent 工具与 Human UI 共用同一请求核心、脱敏与审计链，Postman Collection v2.1 导入附迁移报告，环境变量经 SecretRef 间接引用，SSRF 网络策略默认 fail-closed。
 - [beijingwahw/dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) — 事务化卸载引擎：每个破坏性动作走 validate/preview/execute/undo 四段式并带 Saga 回滚，WAL 崩溃恢复、hash chain 审计、硬链接去重，提交前先知推演成功率。
@@ -5402,6 +5404,7 @@ dsh plugin --profile web add dshmarket
 - [bauerelizabeth07139/opencode-eyes](https://github.com/bauerelizabeth07139/opencode-eyes) — 给不具备多模态能力的模型一双眼睛:把随插件分发的 stdio MCP 服务器挂成 mcp__opencode_eyes__describe_image,把图片交给 StepFun step-3.7-flash 并返回详细描述。
 - [bauerelizabeth07139/opencode-eyes-nvidia](https://github.com/bauerelizabeth07139/opencode-eyes-nvidia) — 走 NVIDIA NIM 的视觉能力:把随插件分发的 stdio MCP 服务器挂成 mcp__opencode_eyes_nvidia__describe_image,用 7 个托管视觉模型之一(默认 MiniMax-M3)描述图片,并支持多 Key 轮换。
 - [bauerelizabeth07139/opencode-ppocr-mcp](https://github.com/bauerelizabeth07139/opencode-ppocr-mcp) — 本地 OCR,不把文件发到云端:把 PP-OCRv6 Medium stdio MCP 服务器(PaddleOCR + ONNX Runtime CPU)挂成 mcp__ppocr__ocr_image 与 mcp__ppocr__ocr_pdf,识别图片和多页 PDF。
+- [BeatAPI/beatapi-agent-plugin#dsh-design](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-design) — 启动已发布的本地 BeatDesign 工作台，接入项目、画布、素材和时间线的 30 个 MCP 工具，附带共享项目与远程生成确认流程。
 - [BeatAPI/beatapi-agent-plugin#dsh-media](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-media) — 提供图片视频模型发现、接口检查、价格预览、确认后生成及原任务续查，通过 BeatAPI 执行。
 - [boheastill/phone-eye](https://github.com/boheastill/phone-eye) — 让 AI 助手看见并操作真实安卓手机：phone_look（视觉+UI 树融合判读）、点击/滑动/输入、截图——经 adb，适用于任何 MCP 客户端。
 - [br1nosense/dsh-vision-solution](https://github.com/br1nosense/dsh-vision-solution) — 为 DSH 纯文本模型补充视觉能力：识图技能（图片理解/OCR/文档解析，竞速池→自定义通道→本地）+ 幂等宿主补丁，让图片消息能送达模型侧。
@@ -6106,6 +6109,7 @@ dsh plugin --profile web add dshmarket
 - [3082838272n-max/dsh-mailbox](https://github.com/3082838272n-max/dsh-mailbox) — DSH 会话信箱：两间会话用文件夹互相传信，另加按小时随机调度——互递信，或主动找主人说话；每个收信人每小时限流，带 UTF-8 日志。
 - [534119219/chicheng-cron](https://github.com/534119219/chicheng-cron) — 定时任务调度器：侧栏管理界面，按 cron 表达式或间隔执行脚本、技能与 Agent 任务，支持完成后推送通知与会话归档。
 - [544244857/dsh-work-assistant](https://github.com/544244857/dsh-work-assistant) — 微信工作助理：把你交代的事记进 SQLite 任务账本，按紧急度排序，到点提醒，从笔记里抽取人物与关系，并把任务分派给独立的助手会话。自带微信机器人通道（扫码登录，仅私聊）与整页仪表盘。
+- [643048695/dsh-egm](https://github.com/643048695/dsh-egm) — 动工前的设计评审闸门：大象代理写设计图纸，零上下文金鱼子代理按固定角色挑刺，你拍板后才开始实现。
 - [778672151/my-fullstack-journey#align-mode](https://github.com/778672151/my-fullstack-journey/tree/main/align-mode) — 交付对齐模式：AI 通过 align_deliver 工具一次只交付一块，每块直接落盘、你可以就地在文件里改，AI 重读你的版本后再继续；方向错了可带时间戳备份安全返工。
 - [7bder/dsh-plugin-orchd](https://github.com/7bder/dsh-plugin-orchd) — 把 orchd 项目状态带进 DSH 右侧栏的只读面板：任务看板、想法看板、依赖图、审查时间线与接入入口，只跟当前会话的项目。
 - [82c86b8z86-stack/dsh-engineering-workflow](https://github.com/82c86b8z86-stack/dsh-engineering-workflow) — 工程化工作流 agent preset：五阶段硬门禁（需求澄清、计划审批、TDD、子 Agent 并行、验证收尾），附 6 个改编自 obra/superpowers 的工作流技能。
@@ -8185,6 +8189,7 @@ dsh plugin --profile web add dshmarket
 - [FaMuer/dsh-real-fish-pet](https://github.com/FaMuer/dsh-real-fish-pet) — 在 dsh web 界面右下角游动的 3D 渲染鲸鱼桌面宠物，任务完成或出错时播放 attention 动画与鲸吟声。
 - [fbbDirge/dsh-xiaoheihe](https://github.com/fbbDirge/dsh-xiaoheihe) — 定时浏览小黑盒帖子，支持可选的人格评论与回复、扫码登录和浏览历史。
 - [FeWOO/DeepSeek-meme](https://github.com/FeWOO/DeepSeek-meme) — DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。
+- [Firefly26710Lover/dsh-firefly-pet](https://github.com/Firefly26710Lover/dsh-firefly-pet) — 透明置顶的桌面桌宠：走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。仅支持 Windows。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
 - [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — DSH 桌面宠物：语音聊天、多人设、聊天记忆、B 站视频与 QQ 群记忆（只读本地文件）；「电脑操作」需在面板里显式打开总开关后才响应语音指令，语音聊天需先在 DSH 中启用内置语音输入。dsh-pet（MIT）的 fork，不能与原版同时安装。
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
