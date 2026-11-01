@@ -2317,7 +2317,7 @@ dsh plugin --profile web add dshmarket
 - [Jimxinfang/dsh-theme-stripe-style](https://github.com/Jimxinfang/dsh-theme-stripe-style) — DeepSeek Harness Web 的 Stripe 风格主题：40px 紫色网格、多级柔和阴影、12px 卡片与 8px 控件圆角，设置页内可直接切换「白昼紫 / 午夜蓝」双版本，并可一键恢复出厂外观。
 - [jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin) — 为 DSH UI 提供完全自定义的主题框架，默认主题为原神魈。
 - [jizenghui81/dsh-huashu-pixel](https://github.com/jizenghui81/dsh-huashu-pixel) — DSH Web 界面的暖调像素主题：亮色暖米白纸面、暗色街机磷光；方角硬描边与偏移投影的像素控件、随包发布的像素字体，流式输出与状态变化带方块光标、扫描线与硬切闪帧；强度（轻/标准/浓）、动效、扫描线、像素字体四组档位在「设置 → 通用」里切换，输出时输入框上沿有一条像素加载条。
-- [John-20260101/dsh-theme-atlas](https://github.com/John-20260101/dsh-theme-atlas) — DeepSeek Harness 网页端的九套皮肤：六套材质研究 + 三套乐山照片皮肤（三江夜、凌云晚照、峨眉夜雾，照片直接作为壁纸）；一套引擎由六个输入色推导全部 119 个 --dsw-* 别名 token，含深浅双版。
+- [John-20260101/dsh-theme-atlas](https://github.com/John-20260101/dsh-theme-atlas) — 六套材质皮肤：墨玉、赤陶、极光、深海、樱雾、素笺。纯 CSS 绘制，一套引擎由六个输入色推导全部 119 个 --dsw-* 别名 token，Alt+K 轮换，选择记在浏览器本地；不含图片，不注册宿主路由。
 - [John-20260101/dsh-theme-leshan](https://github.com/John-20260101/dsh-theme-leshan) — 三套乐山照片皮肤：三江夜、凌云晚照、峨眉夜雾。照片同时铺在窗口和对话画布上，按明暗外观压罩层；每套皮肤由 6 个输入色推导全部 119 个 --dsw-* 别名 token，Alt+K 轮换皮肤，选择记在浏览器本地。
 - [JohnnyTing/dsh-official-homepage-theme](https://github.com/JohnnyTing/dsh-official-homepage-theme) — 复刻 DeepSeek Harness 首页视觉的 Web 主题，提供流体背景、鼠标弹性网格、动态小鱼与可调节效果。
 - [johnsonspirit/ocean-wave-theme](https://github.com/johnsonspirit/ocean-wave-theme) — 整个应用背景铺设动态海浪特效，一条鲸鱼在页面后面游泳，界面各层变为半透明。
@@ -5188,6 +5188,7 @@ dsh plugin --profile web add dshmarket
 - [Koewen/dsh-window-size-lock](https://github.com/Koewen/dsh-window-size-lock) — 仅限 Windows（用 koffi 绑定 user32.dll，macOS/Linux 上不生效）。记住 DeepSeek Harness 主窗口的尺寸与位置：启动时恢复上次的位置和大小，并在宽限期内反复断言以压过默认布局；手动移动或调整窗口后自动保存为新锁定；最小化/最大化/全屏状态不会被记录；DSH 自行放置的默认矩形永远不会被采纳，应用自身的布局重置无法污染锁定；更换显示器时自动防屏外。兼容 DSH 0.2.1-rc.3+。
 - [liyu34/dsh-wsl-tray](https://github.com/liyu34/dsh-wsl-tray) — 为运行在 WSL 的 DSH 提供 Windows 桌面快捷方式和系统托盘启动器：完全隐藏启动，托盘菜单支持打开/重启/退出，插件配置页可管理快捷方式。
 - [lucifergzsz414/dsh-windows-native](https://github.com/lucifergzsz414/dsh-windows-native) — 向系统提示注入原生 Windows（非 WSL）环境下 PowerShell、字符编码、文件系统与跨平台构建的常见坑点。
+- [LyuYuxin/dsh-wsl-folder](https://github.com/LyuYuxin/dsh-wsl-folder) — 在侧栏的「添加工作区」按钮里把 WSL 目录加成 DSH 工作区：选发行版、浏览目录后以 \\wsl.localhost 路径注册；该工作区的侧栏终端开在发行版里，agent 也能正常写入其中的文件。
 - [QiYunqv-jxd/dsh-desktop-autostart](https://github.com/QiYunqv-jxd/dsh-desktop-autostart) — 给 DeepSeek Harness 桌面版加一个登录自启开关：只管理用户启动文件夹里的一个快捷方式，不写注册表、不需要管理员权限、不额外常驻进程。
 - [road-kid/dsh-terminal-shell](https://github.com/road-kid/dsh-terminal-shell) — 选择 Windows 终端工具背后的 shell：PowerShell、本地 Git Bash 或 cmd.exe。
 - [TGWgulugu/dsh-wsl-bridge](https://github.com/TGWgulugu/dsh-wsl-bridge) — 在当前 WSL 发行版里运行持久 bash 以及 Linux 路径的文件与搜索工具。新建对话选中 WSL 后，从该发行版的文件夹里指定工作区，且不会在发行版内安装任何东西。
@@ -5334,7 +5335,7 @@ dsh plugin --profile web add dshmarket
 - [SZMY-haruhi/dsh-tavily](https://github.com/SZMY-haruhi/dsh-tavily) — 为 DSH 提供 Tavily 网页搜索：设置开关、默认无 Key，以及连通测试。
 - [T-Markus-Liang/dsh-webmcp](https://github.com/T-Markus-Liang/dsh-webmcp) — WebMCP 桥接器：让 agent 通过内置无头 Chromium，发现并调用网站按 W3C WebMCP 协议暴露的站点工具。
 - [Tabbit-Browser/dsh-tabbit](https://github.com/Tabbit-Browser/dsh-tabbit) — 让 DeepSeek Harness 能够控制 Tabbit 浏览器：安装即自动加载 tabbit-browser skill，检测国际版 Tabbit 与国内版 Tabbit Browser 正式版（>= 1.9.0），检查 tabbit-cli 常驻运行时，按平台诊断调用 CLI 所需的 DSH sandbox 模式，并在没有合格版本时通过后台任务下载与系统地区匹配的正式版安装包。
-- [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — Codex 同款的浏览器控制：通过本机桥接操控你正在用的 Chrome，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。需 Chrome 120+，并在 chrome://extensions 以「加载已解压的扩展程序」装好仓库自带的扩展，再用 8 位配对码连接。
+- [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — 操控你正在用的 Chrome：通过本机桥接复用已登录的标签页，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。需要 Chrome 120+，扩展从 Chrome 应用商店安装，用 8 位配对码连接。
 - [TC635807/better-crawler4agent](https://github.com/TC635807/better-crawler4agent) — 把真实浏览器抓取注册进 DSH profile：fetch_url 与 fetch_urls 渲染 JS 页面与中文反爬站点（知乎、CSDN、掘金、博客园），返回带分层诊断的干净正文 JSON，crawler_status 报告浏览器是否可用。装好后需要一次性安装 Python 依赖。
 - [Tencent/BrowserSkill#dsh-plugin-browserskill](https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill) — BrowserSkill 的 DeepSeek Harness 浏览器自动化桥接插件，通过原生浏览器工具控制可见的 Chrome 和 Edge Agent Window，支持可访问性与 VOM 页面观察、截图、隔离的多会话控制和 Web UI 实时观察浮层。
 - [Tests4gptplay/dsh-dots](https://github.com/Tests4gptplay/dsh-dots) — 在 DSH 全幅页面使用 ChatGPT Dots，支持 Desktop 启动预加载与同次运行内的页面切换保留、中英文主题工具栏、刷新及外部浏览器回退，并提供需单独应用、适用于 Windows DSH 0.2.1-rc.3 的登录态持久化配套工具。升级至DSH 0.2.1-rc.5后，Dots内嵌页面可能需要在重新启动DSH后再次登录。当前宿主浏览器不提供跨重启登录态保存，原有额外持久化处理也可能在宿主升级时被覆盖；这不是Dots此次更新移除了登录保存功能。
