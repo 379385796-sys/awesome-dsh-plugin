@@ -1317,6 +1317,7 @@ dsh plugin --profile web add dshmarket
 - [SmileBuild/dsh-planchart](https://github.com/SmileBuild/dsh-planchart) — 把 agent 写出的项目规划显示出来：有序步骤在窗口右侧停靠的面板里，框架图在单独的中间标签页中自动排版，可下载为 SVG 或 PNG。图表由会话日志重建，重启与恢复后依然保留。
 - [smj-1680/dsh-plugin-liquid-glass](https://github.com/smj-1680/dsh-plugin-liquid-glass) — 适用于 DSH 桌面端的液态玻璃 UI 美化插件，可与大部分壁纸插件联动使用，目前仅适配深色模式。
 - [SMSMy/dsh-arabic](https://github.com/SMSMy/dsh-arabic) — 让 DSH 界面说阿拉伯语：混合阿拉伯文与英文的双向文本排版，通过 DSH 官方语言服务注册完整阿拉伯语界面包（3,307 条），并内置三款 thmanyah 字体（界面 Sans、正文 Serif Text、标题 Serif Display），置于应用自身字体设置之后。
+- [snnnnke/dsh-folder-launcher](https://github.com/snnnnke/dsh-folder-launcher) — 从 Windows 资源管理器右键把文件夹加入正在运行的 DSH 网页版工作区，并在需要时自动启动 dsh web。
 - [SnowCrescenter-tech/dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) — DSH Web UI 右侧的圆点时间轴：每条提问一个圆点，悬停查看内容与元信息（时间、轮次、耗时、TTFT、token），点击即跳转。附带全会话消息列表、站内与跨会话搜索、书签深链接（#msg=）和键盘导航。
 - [snowowowo/dsh-manim-card](https://github.com/snowowowo/dsh-manim-card) — 新增 manim_card 工具，把 Manim Python 渲染为聊天流中可播放的动画卡片；代码经随包分发的运行时在浏览器内执行，本机无需安装 Python；导出视频时，本机装了 Manim 就走 CLI 渲染，否则在浏览器内逐帧导出。
 - [Sodapopper-pixel/dsh-cot-translator-plus](https://github.com/Sodapopper-pixel/dsh-cot-translator-plus) — 把展开的思考内容翻成界面语言：翻译来源可以是任意 HTTP 站点模板，也可以是模型（DSH 已注册提供商，或插件自带的自定义 OpenAI 兼容提供商）。
@@ -2845,6 +2846,7 @@ dsh plugin --profile web add dshmarket
 - [tang-bugu/dsh-connect-qwenwork](https://github.com/tang-bugu/dsh-connect-qwenwork) — 注册千问办公（QwenWork）模型提供器，复用桌面客户端的本机登录态，在 127.0.0.1 起一个 OpenAI 兼容回环桥，把 DSH 的模型请求翻译成上游真正使用的 ACP 控制信封对话协议。
 - [tangyixiao/dsh-workbuddy-connect-community](https://github.com/tangyixiao/dsh-workbuddy-connect-community) — 复用本机桌面登录的 WorkBuddy 与 WorkBuddy AI 模型提供器社区分叉，提供模型发现和额度显示。声明兼容 DSH 0.2.1-rc.2 和 rc.3，CN 兼容层与 functy23 的分叉不同。
 - [tangyixiao/dsh-zcode-plan-bridge](https://github.com/tangyixiao/dsh-zcode-plan-bridge) — 需已安装并登录 ZCode CLI。把 ZCode CLI agent 接入 DeepSeek Harness 作为模型提供方。常驻 app-server 会话逐回合流式转发，模型清单从 CLI 实时读取，因此上下文窗口、图片支持与 provider 路由都跟随已安装的 CLI 和账号。稳定版 0.5.2 通过 engines.dsh 声明 DSH 兼容范围，文档参考内核为 ZCode CLI 3.16.3。工具权限请求默认拒绝；未知的 approval/permission 方法始终拒绝，全自动需显式启用。DSH 自带的审批界面不会介入这个独立 spawn 的 app-server 进程，该策略也不构成操作系统沙箱。
+- [tasuma-qwq/baifanyu-ofm-bridge](https://github.com/tasuma-qwq/baifanyu-ofm-bridge) — 提供 OFM 渠道与档位选择、免费公开池配置、冷却记录和本机 DSH 接入验证。
 - [tearslee/dsh-workbuddy2api](https://github.com/tearslee/dsh-workbuddy2api) — 托管本地 workbuddy2api 网关进程，把它的模型注册为 dsh 的模型提供方，上下文窗口与思考档位均从网关自身的模型接口读取。
 - [Tests4gptplay/dsh-codex-native](https://github.com/Tests4gptplay/dsh-codex-native) — 使用 ChatGPT 账号在 DSH 中接入 Codex：选择模型与思考档位，进行图文对话、使用工具和技能，经审批执行本机任务，回答交互问题，压缩并续接长对话，查询额度和 Token 历史，并维护受支持的 Windows 截图辅助程序。
 - [TheStreamCode/dsh-muse-code](https://github.com/TheStreamCode/dsh-muse-code) — 把 Meta 的 Muse Code 订阅接入为 DSH 模型提供方，在设置中声明 Meta 路由、同步账号聊天模型目录到模型选择器，并提供登录卡片与 /muse-login 设备码登录、凭据自动续期与红绿点。需有效 Muse Code 订阅，无需 Meta CLI。
@@ -6346,6 +6348,7 @@ dsh plugin --profile web add dshmarket
 - [quaner1234-cmd/dsh-subagent-watchdog](https://github.com/quaner1234-cmd/dsh-subagent-watchdog) — 当原生可续接 DSH 子代理因明确的 max-tokens 终止时自动续接一次，然后停止介入。
 - [que3sui/dsh-darwin#forge](https://github.com/que3sui/dsh-darwin/tree/main/packages/forge) — 自进化执行器：消费会话日志挖掘出的问题工单，在评测门（hold-out canary 防作弊）下合成技能候选，人工确认晋级到项目 .dsh/skills 并支持确定性回滚。
 - [R-LEI2536/dsh-more-agent-presets](https://github.com/R-LEI2536/dsh-more-agent-presets) — 为 DSH 提供更多智能体预设，衍生自其他编程智能体（例如 Qwen Code、iFlow）。
+- [R-roker315/dsh-flowforge](https://github.com/R-roker315/dsh-flowforge) — 流程锻造——在侧边面板编排多步骤提示词工作流，支持自检门禁、引擎执行的跳转规则、主对话 AI 逐步执行与实时运行面板。
 - [rainbowzhu22-eng/cece_legal_skills](https://github.com/rainbowzhu22-eng/cece_legal_skills) — DeepSeek Harness 文书脱敏插件，提供本地识别、人工复核、PDF 框选遮盖、历史记录与可选 Agent 改规则。需 Python 3.9+，首次准备依赖需要联网；仅规则生成需要模型，Windows 待实机验收。
 - [Rainier-Z/dsh-workspace-monitor](https://github.com/Rainier-Z/dsh-workspace-monitor) — 一个适配 DeepSeek Harness 的工作区监测插件，按周期检测并报告文件的新增、修改和删除。
 - [randomix777/dsh-image-gen](https://github.com/randomix777/dsh-image-gen) — dsh-image-gen 优化版：支持批量生图（count 参数）、画廊分页懒加载、请求超时/重试，兼容 7 个提供商：Gemini/OpenAI/Seedream/通义万相/Agnes/智谱 GLM/Stability AI。
