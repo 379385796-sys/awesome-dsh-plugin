@@ -4172,6 +4172,7 @@ dsh plugin --profile web add dshmarket
 - [chimneyQ/dsh-context-toolkit](https://github.com/chimneyQ/dsh-context-toolkit) — 让大块输出不进对话：ctk_execute、ctk_execute_file 与 ctk_batch_execute 在子进程里跑代码只回结论，ctk_index 与 ctk_search 把长材料存进基于 node:sqlite 的本地 FTS5 知识库，路由门禁在执行前拦下 curl 与 wget。附 ctk_stats、ctk_doctor 与带实时上下文占用面板的设置页，零第三方运行时依赖。
 - [CHplus0/dsh-learning-mode#plugin](https://github.com/CHplus0/dsh-learning-mode/tree/main/plugin) — 学习模式（Learning Mode）Agent 预设：边做边教的编码 Agent——具体的情景化阐释、苏格拉底式引导、TODO(你) 留白练习，模拟 Claude Code 的 Learning 输出风格；可 `dsh plugin add` 安装（npm 包 dsh-learning-mode）。
 - [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) — Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。
+- [chunqing286/dsh-guard-degen](https://github.com/chunqing286/dsh-guard-degen) — 在模型输出边界检测并拦截退化符号流，并提供修复被污染工件与会话的工具。
 - [ciky20171114/dsh-plugin-midscene](https://github.com/ciky20171114/dsh-plugin-midscene) — 基于 Midscene 的 AI UI 自动化——android_ui 与 web_ui 工具，通过 ctx.midscene seam 在真实 Android 设备或已运行的 Chrome 上完成点击、输入、查询与断言。
 - [Cjrrrrrrrr/dsh-plugins#dsh-hiddify](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-hiddify) — 不打开 Hiddify 桌面版也能用它：七个工具起停内核、切换分流模式（重建配置并重启内核）（外网走代理／国内与内网直连）、经 Clash 控制面轮换出口节点，并经代理做多引擎检索与网页抓取。仅 Windows。
 - [Cjrrrrrrrr/dsh-plugins#dsh-scholar](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-scholar) — DSH 学术检索工具：四个模型可用工具 paper_search / paper_get / paper_citations / book_search，覆盖 OpenAlex、arXiv、Crossref、Semantic Scholar、PubMed 五个库，并用 Unpaywall 解析开放获取 PDF。
@@ -6513,7 +6514,7 @@ dsh plugin --profile web add dshmarket
 - [ygcdsj/dsh-home-migrate](https://github.com/ygcdsj/dsh-home-migrate) — 迁移 DSH 配置：跨机器导出/导入 .dshmig 归档（同 OS、新建 profile、凭据脱敏、校验与回滚）。
 - [Yisan0429/dsh-itranslation#bundle](https://github.com/Yisan0429/dsh-itranslation/tree/main/packages/itranslation/bundle) — DeepSeek Harness 整本书翻译生产线：确定性章节识别与分段、子代理逐章翻译、术语表控制、全书审查、定向修订，以及可审计的 meta.json 证据链。
 - [yixing233/dsh-crabtodo](https://github.com/yixing233/dsh-crabtodo) — DeepSeek Harness 的人机共享待办：你和 AI 通过侧边栏或待办工具管理同一份任务，支持项目级与全局待办，并可一键把任务引用进输入框。
-- [ypx01/dsh-auto-shutdown](https://github.com/ypx01/dsh-auto-shutdown) — 仅 Windows：会话标题栏上的「任务完成后自动关机」开关——所有开启它的会话都不再有进行中的回合、任务、子代理或定时执行（默认还要求其他在线会话也空闲）时，开始两分钟倒计时，结束后关机；点倒计时即取消，没开这个开关的会话不会触发任何动作。
+- [ypx01/dsh-auto-shutdown](https://github.com/ypx01/dsh-auto-shutdown) — 仅 Windows：会话标题栏上的「任务完成后自动关机」开关——所有开启它的会话都不再有进行中的回合、任务或子代理（默认还要求其他在线会话也空闲）时，开始两分钟倒计时，结束后关机；点倒计时即取消，没开这个开关的会话不会触发任何动作。
 - [YukimuraSol/dsh-cursor-modes](https://github.com/YukimuraSol/dsh-cursor-modes) — 为 dsh 网页端提供类 Cursor 的模式切换：带委派闸门的计划模式、带工具调用配额的多任务模式，以及 create_plan / request_more_edits / list_running_agent 三个工具。另有带 Build 按钮的计划卡片，并把子代理下拉收成只显示运行中的行。
 - [yulong-me/ds-kanban](https://github.com/yulong-me/ds-kanban) — 人、DSH 会话与可选 DS Bot 共用的本地看板，提供角色权限、变更记录和明确的任务完成操作。
 - [yuna78/dsh-plugin-dev-workflow](https://github.com/yuna78/dsh-plugin-dev-workflow) — 面向 DSH 的研发交付工作流 preset：一段工作协议加七个工具，保留用户原话与验收条件、记录反馈决策、拆解带验收的任务、记录真实验证命令与退出码，并以项目隔离的 JSONL 记录完成总结。
@@ -6994,7 +6995,7 @@ dsh plugin --profile web add dshmarket
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [yunfengnobug/dsh-qq-bot](https://github.com/yunfengnobug/dsh-qq-bot) — 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。它沿用上游的 Cordis id（qq-bridge）：安装前须先卸载 sj244/dsh-qq-bridge，两者不能同装；白名单为空时谁都不会被叫醒。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
-- [Yuuyuko-uu/dsh-qq-bridge](https://github.com/Yuuyuko-uu/dsh-qq-bridge) — 通过 NapCat HTTP 把 DSH 会话和 QQ 双向打通：AI 说完自动发到 QQ，你在 QQ 里说的话自动转进会话。
+- [Yuuyuko-uu/dsh-qq-link](https://github.com/Yuuyuko-uu/dsh-qq-link) — 通过 NapCat HTTP 把 DSH 会话和 QQ 双向打通：AI 说完自动发到 QQ，你在 QQ 里说的话自动转进会话。
 - [yxiaoy6/dsh-taskbar-alert](https://github.com/yxiaoy6/dsh-taskbar-alert) — Windows 上审批、提问或方案确认在等你、或一轮回复完成时，让 DeepSeek Harness 的任务栏按钮闪动。
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
 - [zaofan-make/dsh-qqbot](https://github.com/zaofan-make/dsh-qqbot) — 接入 QQ 官方机器人的 DeepSeek Harness 通道(tencent-connect/dsh-qqbot 功能增强 fork): 群/私聊与完整 agent 对话、表情包图库(自动打标+AI 斗图)、群管理(入群审批/禁言)、botplay 互动事件卡与翻页目录、用户扩展注册表(自定义斜杠命令与 QQ 工具)、定时唤醒、QQ 远程审批、悬浮球 dock Web UI。
@@ -7689,6 +7690,7 @@ dsh plugin --profile web add dshmarket
 - [we39/dsh-jumpserver](https://github.com/we39/dsh-jumpserver) — 通过对话查询与管理 JumpServer：资产、用户、账号、授权、会话、命令审计、命令过滤与 RBAC 角色，使用 AccessKeyID/AccessKeySecret（HTTP 签名）鉴权。
 - [weibaohui/user-management](https://github.com/weibaohui/user-management) — 用户管理：给 dsh web 加登录门禁，未登录访问弹登录/注册页，首个注册者自动成为管理员；管理员可管理用户/角色，带登录与访问审计。
 - [weisofns/dsh-security-guard](https://github.com/weisofns/dsh-security-guard) — DSH 插件安全卫士：28 条规则静态扫描、风险评分、白名单/黑名单、本地 Web 仪表盘与 DSH 内风险弹窗。
+- [wld007/dsh-medical-anonymizer](https://github.com/wld007/dsh-medical-anonymizer) — 在 DeepSeek Harness 中批量匿名化病历文本、CSV、JSON 与 XLSX：先跑确定性标识符规则，可选 OpenAI 兼容模型做发现与复核；按精确区间替换以保持文件结构，同一值保持同一假名，并输出审计报告与映射库。DICOM 影像按 PS3.15 附录 E 只处理头部元数据，像素数据逐字节保留。
 - [wld12314/agent-web-sandbox](https://github.com/wld12314/agent-web-sandbox) — 在内容进入模型之前净化抓取的网页：剥离隐藏文本、站外图片与内联数据，其余内容用带金丝雀的不可信分隔符包裹，并标记提示注入。
 - [wulun811/dsh-plugin-vet](https://github.com/wulun811/dsh-plugin-vet) — DSH 插件信任流水线：确定性静态扫描判定、可选运行时守卫与蜜罐诱饵、agent 审查协议技能与浏览器盾牌状态灯，只报警不执法。
 - [wxlei2004/dsh-plugins#dsh-re-workbench](https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-re-workbench) — 逆向分析工作台：通过 @deepseek-ai/dsh-mcp-client 把本机 IDA Pro 桥接进 DSH，将 ida-pro-mcp 工具集（反编译、xref、重命名、注释）以 mcp__ida__* 注册给模型。自动选择 idalib 无头模式（进程内分析二进制，无需打开 IDA GUI）或 GUI 模式（连接 IDA 插件 RPC，默认 13337 端口）。附带 re_check、re_open、re_status 三个工具；内置 MCP server 为零依赖 stdio 代理，任意 MCP 客户端可直接挂载。
