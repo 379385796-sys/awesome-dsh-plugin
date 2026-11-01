@@ -1,6 +1,6 @@
 url: https://github.com/19952730389/dsh-app-updater
 name: 19952730389/dsh-app-updater
-category: usage
+category: tools
 tarball: https://github.com/19952730389/dsh-app-updater/releases/latest/download/dsh-app-updater.tgz
 description:
   en: Detect which installed apps have a newer version and update them with one click, downloading each vendor's full installer from its official site and installing it silently. Windows via winget, macOS via Homebrew casks, matching the machine's ARM64 or x64 architecture.
