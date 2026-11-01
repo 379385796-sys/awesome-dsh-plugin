@@ -1928,7 +1928,6 @@ dsh plugin --profile web add dshmarket
 - [imlishiyuan/dsh-keep-running](https://github.com/imlishiyuan/dsh-keep-running) — 配额看门狗：遇到 429 或配额错误时建立循环调度，持续重发「继续任务」提示直到某一轮正常结束，长任务不必手动重开；/keep-running list 与 /keep-running cancel <id> 用于查看和取消。需先挂载 @deepseek-ai/dsh-schedule（调度由它注册）。
 - [itchenshi/dsh-model-surplus](https://github.com/itchenshi/dsh-model-surplus) — 在会话标题右侧显示当前模型的用量与余量：OpenCode Go 套餐用量、选中模型所对应的月上限、Command Code 的 5 小时与周窗口用量及剩余额度，以及 DeepSeek 账户余额。
 - [itsbuyru-bit/dsh-model-price](https://github.com/itsbuyru-bit/dsh-model-price) — 按模型设置高峰/低谷价格（USD 或 CNY），在输入框下方显示 DeepSeek 账户余额与本次会话花费，累计总花费，每条价格可记录来源链接与核对日期，并支持为单个模型覆盖高峰时段。
-- [iu3o3/dsh-archived-sessions](https://github.com/iu3o3/dsh-archived-sessions) — 管理并删除已归档的 DSH 对话：设置里新增「归档会话」页，列出所有归档会话，支持单条与批量删除；侧边栏会话「…」菜单在「取消归档」旁新增红色的「删除归档会话」。删除是真正的删除（会话日志、投影缓存与两套索引一起清理），不只是取消归档。
 - [ium9khbep8834-maker/dsh-cache-saver](https://github.com/ium9khbep8834-maker/dsh-cache-saver) — 按 agent 收敛过大的 MCP 工具 JSON Schema（调度不变），并在设置页展示 token 用量、缓存命中与上下文构成。
 - [izz-BLUE/dsh-deepseek-usage-dashboard](https://github.com/izz-BLUE/dsh-deepseek-usage-dashboard) — DSH Web 的 DeepSeek API 用量仪表盘：基于会话日志统计每日缓存命中/未命中输入与输出 Token，并展示分模型费用估算、账户余额、7 日趋势和 composer 用量摘要。
 - [jacujay/dsh-model-balance](https://github.com/jacujay/dsh-model-balance) — 自动识别当前模型厂商（内置 7 家），在输入框内显示余额或配额，未内置厂商可配置自定义接口。
@@ -3267,6 +3266,7 @@ dsh plugin --profile web add dshmarket
 - [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。
 - [iStarryDust/dsh-edit-regen](https://github.com/iStarryDust/dsh-edit-regen) — 编辑重发：在用户消息气泡上多一个「编辑」，改完从那条消息重新生成，图片与文件随行重传，模型继承原会话。
 - [itchenshi/dsh-gui-last-session](https://github.com/itchenshi/dsh-gui-last-session) — 重启 DeepSeek Harness 后自动回到最近一次对话；实现方式是在 DSH 数据目录里保存一个指针文件，不修改引擎文件。
+- [iu3o3/dsh-archived-sessions](https://github.com/iu3o3/dsh-archived-sessions) — 管理并删除已归档的 DSH 对话：设置里新增「归档会话」页，列出所有归档会话，支持单条与批量删除；侧边栏会话「…」菜单在「取消归档」旁新增红色的「删除归档会话」。删除是真正的删除（会话日志、投影缓存与两套索引一起清理），不只是取消归档。
 - [jackxiao17/dsh-session-cleaner](https://github.com/jackxiao17/dsh-session-cleaner) — 在侧栏会话菜单中加入「删除」，把会话——带子代理时连同整棵后代树——搬进回收站（目录在磁盘上整体 rename 迁走，原子操作，不做复制），并提供侧栏回收站面板：标题与正文搜索、工作区筛选、排序、查看对话记录、恢复与彻底删除。删除时同时摘掉工作区槽位、置顶与归档标记以及投影缓存行，恢复时把会话放回侧栏原位置；彻底删除时清掉绑定该会话的定时任务并删除空掉的工程目录。已在 DeepSeek Harness 0.2.1-rc.2 上真机验证，删除后全盘无残留。
 - [JanEickholt/dsh-asc](https://github.com/JanEickholt/dsh-asc) — 由模型主导的 DeepSeek Harness 上下文压缩：由 agent 决定何时压缩、压缩什么，以持久化会话日志替换提交，并提供可逆的工具结果压缩与逐字节哈希取回。
 - [jarvisluk/dsh-projectless-session](https://github.com/jarvisluk/dsh-projectless-session) — 在 DSH 工作区选择器中添加无工作区会话入口，创建按日期整理的独立目录，并让已开始的会话在未分组区域保持可恢复。
@@ -4203,7 +4203,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
 - [danieldu168/dsh-stash](https://github.com/danieldu168/dsh-stash) — 把外部数据库与文献语料登记成模型可调用的取数工具；每条库声明取数边界，钥匙台账只记引用名不存值，取数台账只留指纹与内容哈希而不留响应体。
 - [danshuyue/dsh-onebot-channel](https://github.com/danshuyue/dsh-onebot-channel) — 经 OneBot 11 把 QQ 私聊和群聊接进 DSH，提供 qq_send 等工具，让 agent 能回消息、发表情、等待对方接话。
-- [DayuanJiang/next-ai-draw-io#dsh-plugin](https://github.com/DayuanJiang/next-ai-draw-io/tree/main/packages/dsh-plugin) — dsh 的 draw.io 绘图插件：通过 next-ai-drawio MCP 服务器作图，点回复里的链接在右侧栏打开实时预览，可以手动修改图，AI 的每次修改都是可以恢复的版本。
+- [DayuanJiang/next-ai-draw-io#dsh-plugin](https://github.com/DayuanJiang/next-ai-draw-io/tree/main/packages/dsh-plugin) — dsh 的 draw.io 绘图插件：通过 next-ai-drawio MCP 服务器作图，点回复里的链接在右侧栏打开实时预览，可以手动修改图，AI 的每次修改都是可以恢复的版本。需 Node.js 18+，首次使用由 npx 下载 MCP 服务器。
 - [Deanyu148/dsh-balance-inquiry](https://github.com/Deanyu148/dsh-balance-inquiry) — 余额看板，可以添加多个按量计费/Token plan，同时查询余额。
 - [Deanyu148/dsh-import-newapi](https://github.com/Deanyu148/dsh-import-newapi) — 一键从new api站点导入复制的连接信息。
 - [DeepTrial/dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) — 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。
@@ -5192,7 +5192,7 @@ dsh plugin --profile web add dshmarket
 - [Koewen/dsh-window-size-lock](https://github.com/Koewen/dsh-window-size-lock) — 仅限 Windows（用 koffi 绑定 user32.dll，macOS/Linux 上不生效）。记住 DeepSeek Harness 主窗口的尺寸与位置：启动时恢复上次的位置和大小，并在宽限期内反复断言以压过默认布局；手动移动或调整窗口后自动保存为新锁定；最小化/最大化/全屏状态不会被记录；DSH 自行放置的默认矩形永远不会被采纳，应用自身的布局重置无法污染锁定；更换显示器时自动防屏外。兼容 DSH 0.2.1-rc.3+。
 - [liyu34/dsh-wsl-tray](https://github.com/liyu34/dsh-wsl-tray) — 为运行在 WSL 的 DSH 提供 Windows 桌面快捷方式和系统托盘启动器：完全隐藏启动，托盘菜单支持打开/重启/退出，插件配置页可管理快捷方式。
 - [lucifergzsz414/dsh-windows-native](https://github.com/lucifergzsz414/dsh-windows-native) — 向系统提示注入原生 Windows（非 WSL）环境下 PowerShell、字符编码、文件系统与跨平台构建的常见坑点。
-- [LyuYuxin/dsh-wsl-folder](https://github.com/LyuYuxin/dsh-wsl-folder) — 在侧栏的「添加工作区」按钮里把 WSL 目录加成 DSH 工作区：选发行版、浏览目录后以 \\wsl.localhost 路径注册；该工作区的侧栏终端开在发行版里，agent 也能正常写入其中的文件。
+- [LyuYuxin/dsh-wsl-folder](https://github.com/LyuYuxin/dsh-wsl-folder) — 在侧栏的「添加工作区」按钮里把 WSL 目录加成 DSH 工作区：选发行版、浏览目录后以 \\wsl.localhost 路径注册；该工作区的侧栏终端开在发行版里，agent 也能正常写入其中的文件。需 Windows 10/11 并已安装 WSL。
 - [QiYunqv-jxd/dsh-desktop-autostart](https://github.com/QiYunqv-jxd/dsh-desktop-autostart) — 给 DeepSeek Harness 桌面版加一个登录自启开关：只管理用户启动文件夹里的一个快捷方式，不写注册表、不需要管理员权限、不额外常驻进程。
 - [road-kid/dsh-terminal-shell](https://github.com/road-kid/dsh-terminal-shell) — 选择 Windows 终端工具背后的 shell：PowerShell、本地 Git Bash 或 cmd.exe。
 - [TGWgulugu/dsh-wsl-bridge](https://github.com/TGWgulugu/dsh-wsl-bridge) — 在当前 WSL 发行版里运行持久 bash 以及 Linux 路径的文件与搜索工具。新建对话选中 WSL 后，从该发行版的文件夹里指定工作区，且不会在发行版内安装任何东西。
@@ -7858,7 +7858,7 @@ dsh plugin --profile web add dshmarket
 - [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) — 远程主机隧道管理器：把 dsh web 跑在远程 Linux 服务器上（systemd 守护、免 root），本地经自动重连的 SSH 隧道访问；远程端口自动分配并在服务器登记留档，支持多人共用与 audit 审查。
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) — 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。
 - [liushQAQ/dsh-anywhere](https://github.com/liushQAQ/dsh-anywhere) — 专为 DSH iOS App 与移动端协同打造的远程连接插件，支持扫码配对、锁屏恢复与隧道管理。
-- [liyuhan7/dsh-phone-mirror](https://github.com/liyuhan7/dsh-phone-mirror) — 在 DSH 右侧栏通过 adb 投屏并反控安卓手机/平板，支持 Opus 声音转发；仅支持 Windows。
+- [liyuhan7/dsh-phone-mirror](https://github.com/liyuhan7/dsh-phone-mirror) — 在 DSH 右侧栏通过 adb 投屏并反控安卓手机/平板，支持 Opus 声音转发（声音需 Android 11+）；仅支持 Windows。
 - [lninghaha/dsh-coding-remote-kit](https://github.com/lninghaha/dsh-coding-remote-kit) — DeepSeek Harness 移动配对远程插件：双平面白名单 RPC 上的端到端加密 Companion（局域网、Tailscale，可选 Cloudflare Quick Tunnel 或自建 rendezvous）。
 - [longisland-icetea/dsh-lan-access](https://github.com/longisland-icetea/dsh-lan-access) — 可配置的 DSH Web GUI 局域网访问：设置页开启后绑定全部网卡，只信任你配置的访问地址，可调整浏览器会话有效期或去掉 token 登录，并修复非回环访问时的设置层。
 - [loveXbanshee/dsh-fleet](https://github.com/loveXbanshee/dsh-fleet) — DeepSeek Harness 多机指挥台：用一个本地 dsh 页面管理多台远程 dsh——实时查看远程忙闲、免切标签页原地切换与使用、远程页面保活秒开、跨设备读取历史会话、一键刷新/重启，并支持控制端/被控端角色。
@@ -7911,7 +7911,7 @@ dsh plugin --profile web add dshmarket
 - [somebdly/dsh-docker](https://github.com/somebdly/dsh-docker) — dsh-docker 是 DeepSeek Harness Web 的 Docker 管理面板插件：支持本机 CLI 与 SSH 远端多目标一键切换，统一管理 Docker MCP（部署/移除/搜索官方 Catalog/启停重启 Gateway/自定义部署）与容器镜像（启停/删除/日志/详情/交互式终端/新建/构建/导入）。凭据经 Windows DPAPI 加密存储，HTTP 仅限本机 loopback 访问，命令参数白名单防注入；免构建、纯 ESM、Client 零依赖。
 - [songofhawk/dsh-alpha](https://github.com/songofhawk/dsh-alpha) — DSH 的多机多 Agent 编排与控制平台：发现各设备上的 Agent 与工作区，按机器、仓库、能力和负载将任务路由到本地或远程 Agent Runtime，统一回传进度、审批与结果，并在断线后恢复持久任务。
 - [SOVLOOKUP/dsh-tunnel-preview](https://github.com/SOVLOOKUP/dsh-tunnel-preview) — 通过 Cloudflare Tunnel 将本地监听端口暴露为公网 HTTPS 预览链接，支持自动管理 DNS 记录与一键模板创建 API Token。
-- [ssy-in/dsh-my-phone](https://github.com/ssy-in/dsh-my-phone) — 让手机连上本机的 DeepSeek Harness 桌面版：局域网或 Cloudflare 隧道二维码配对，实时消息列表与授权提醒，桌面悬浮球。
+- [ssy-in/dsh-my-phone](https://github.com/ssy-in/dsh-my-phone) — 让手机连上本机的 DeepSeek Harness 桌面版：局域网或 Cloudflare 隧道二维码配对，实时消息列表与授权提醒，桌面悬浮球。局域网与 Cloudflare 隧道两个入口默认都开启；每台手机用自己的配对令牌。
 - [sunChargedd/dsh-plugins#dsh-ssh-manage](https://github.com/sunChargedd/dsh-plugins/tree/main/dsh-ssh-manage) — DSH 的 SSH 主机管理插件：浏览 ~/.ssh/config，保存 AES-256-GCM 加密密码，执行批量命令与 SFTP，并在可保持的侧边栏标签页中打开交互式 PTY 终端。
 - [sunrulin123/dsh-community-web-ui](https://github.com/sunrulin123/dsh-community-web-ui) — DeepSeek Harness 独立远程 Web UI：适配手机视口、软键盘与触控热区，同时保持原生桌面端界面不变。
 - [swarm-apps/dsh-swarmdrop](https://github.com/swarm-apps/dsh-swarmdrop) — 在 agent 和你自己的手机之间开一条设备通道：agent 把刚产出的文件发过去，手机传回来的东西可以在输入框里 @ 引用。底层经 SwarmDrop CLI 走端到端加密的 P2P，不需要账号，也不需要公网 IP；节点状态、已配对设备与扫码配对都在侧边栏面板里。
