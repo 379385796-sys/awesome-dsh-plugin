@@ -903,6 +903,7 @@ dsh plugin --profile web add dshmarket
 - [Lionad-Morotar/dsh-jump](https://github.com/Lionad-Morotar/dsh-jump) — 按下组合键后，用字母标签选中并点击或聚焦任意可见目标。
 - [liqiGeGe/dsh-plugin-execution-graph](https://github.com/liqiGeGe/dsh-plugin-execution-graph) — 在会话视图中新增「执行图」标签页，把每个轮次的提问、模型回复与工具调用/结果渲染为可折叠的时间轴，并带详情面板与 PNG 导出。
 - [liqiming-whu/dsh-status-card](https://github.com/liqiming-whu/dsh-status-card) — 为每次 DSH Agent 回复添加可配置的 dsh-ui 状态卡片，提供双语模板和实时设置预览。需要先从 dsh-market 安装 @omdsh-dev/dsh-genui，否则卡片标记会以未渲染的形式输出。
+- [lisihao/dsh-intelligent-UI](https://github.com/lisihao/dsh-intelligent-UI) — 可选接管对话渲染，保留原文与数据，提供可切换主题、离线 Uiverse 组件工具和报告内证据工作区。适配 DSH 0.2.1-rc.2 的预览版。
 - [lisniuse/dsh-modal-enhancer](https://github.com/lisniuse/dsh-modal-enhancer) — 为所有 Web UI 弹窗添加窗口化操作：标题栏拖动、八向缩放、钉住防误触关闭、全屏最大化、移除背景模糊，以及按弹窗持久化的状态。
 - [littleboylittlegirl/dsh-community-hot](https://github.com/littleboylittlegirl/dsh-community-hot) — Web UI 的社区热门悬浮面板：24 小时热门话题与热门插件 TOP10，悬浮按钮可拖动置顶、点击居中展开。
 - [liu19666/dsh-model-block-picker](https://github.com/liu19666/dsh-model-block-picker) — 按来源分块的输入框模型选择器：先选来源渠道卡片，再下钻进该渠道选择模型，保留跨来源搜索与推理强度调节。
@@ -4698,6 +4699,7 @@ dsh plugin --profile web add dshmarket
 - [ouli-1242/dsh-plugin-tool-management](https://github.com/ouli-1242/dsh-plugin-tool-management) — 一个设置面板，统一管理 MCP、技能、记忆、子智能体、提示词和归档会话；可自定义搭配场景，一个场景即可切换整个环境；Agent也能帮你操作这个插件。
 - [OverDustD7/dsh-chat-digest](https://github.com/OverDustD7/dsh-chat-digest) — 把微信与 QQ 聊天记录里「必须做的、可以报名的、值得知道的」摘成一张面板：由一个常驻会话按计划或在你点 Fetch 时重读聊天记录并改写条目，每条可直链到原始文件或图片。
 - [ownduck/dsh-custom-env](https://github.com/ownduck/dsh-custom-env) — 在设置中管理 $DSH_HOME/.env，并同步到 Host 与 Windows/macOS 用户环境。
+- [ozanstn1-stack/dsh-drive-backup](https://github.com/ozanstn1-stack/dsh-drive-backup) — 基于 rclone 的备份工具，含四个工具：目标清单、本地/远端状态、rclone check 校验，以及带预演与审计行的审批式 copy/sync 传输。
 - [ozanstn1-stack/dsh-vps-ops](https://github.com/ozanstn1-stack/dsh-vps-ops) — 先读后写的 VPS 运维工具：systemd 状态与操作、磁盘占用、Docker 状态、日志尾部、可配置备份与静默时段计划。
 - [pan17/dsh-tool-manager](https://github.com/pan17/dsh-tool-manager) — DSH 工具管理插件：按 Agent Preset 开关和分组工具，像 Skill 一样按需加载工具，减少模型上下文占用。
 - [pangxie985/dsh-desktop-yida](https://github.com/pangxie985/dsh-desktop-yida) — 通过 OpenYida CLI 给 Agent 14 个创建、修改钉钉宜搭应用（应用、表单、页面、Schema、数据）的工具，并在右侧栏工作台里用内置浏览器打开查看。
