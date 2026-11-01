@@ -537,6 +537,7 @@ dsh plugin --profile web add dshmarket
 - [EternalNight996/dsh-ui-three-body](https://github.com/EternalNight996/dsh-ui-three-body) — 给 DeepSeek Harness 装上会开智的智子：注入驯兽内核让 AI 真正懂你，11 款动态皮肤、幽灵模式，关闭 AI 模式即零 token 消耗。
 - [EugeneVl/dsh_session_folders](https://github.com/EugeneVl/dsh_session_folders) — 为网页侧边栏提供单层会话文件夹——按工作区分组会话，支持拖拽或右键菜单移动、归档与恢复，数据在服务端持久化。
 - [EventHorizonXT/dsh-model-navigator](https://github.com/EventHorizonXT/dsh-model-navigator) — 替换模型选择器，提供全局搜索、收藏、最近使用、模型家族导航与思维强度选择。
+- [exoticknight/dsh-better-left-sidebar](https://github.com/exoticknight/dsh-better-left-sidebar) — 更清爽、更合理的 DeepSeek Harness 左边栏，支持插件自定义多个小组件。
 - [exoticknight/dsh-just-chat](https://github.com/exoticknight/dsh-just-chat) — 为 DeepSeek Harness 提供一键原生对话入口，每次创建独立工作区和会话。
 - [Eyeing0721/dsh-cot-en2cn](https://github.com/Eyeing0721/dsh-cot-en2cn) — 在 DSH 网页对话里把每段英文思考的中文译文显示在原文正下方，不改动会话记录；按译文块缓存、可指定翻译模型，并带设置面板。
 - [Faide-cyber/dsh-model-in-use](https://github.com/Faide-cyber/dsh-model-in-use) — 让 DSH 的模型菜单看见会话占用、记住模型推理档位与折叠状态。
@@ -2709,7 +2710,7 @@ dsh plugin --profile web add dshmarket
 - [Leafyezi233/dsh-model-gateway](https://github.com/Leafyezi233/dsh-model-gateway) — 把 DeepSeek Harness 里已配置好的模型通过 OpenAI 兼容网关中转出去，其他本地项目 用标准 OpenAI 客户端即可调用。多个供应商候选共享一个具名分组，支持顺序、均衡、 随机三种调度；上游在产出任何内容前失败时自动切换下一候选，客户端无感，被限流的 请求按供应商指示的退避时间自动重试。每条候选的调用统计（尝试、应答、失败、 token/TTFT 累计）以徽章形式显示在设置页，按天聚合的数据落盘为本地文件，附 30 天 热力图与趋势视图。在界面创建密钥之前，接口对任何能访问到它的人开放；创建密钥 （仅存 SHA-256 哈希）后开启校验，且删掉最后一个密钥仍保持锁定，需显式关闭鉴权 才会重新开放。若启用可选的局域网监听而未配密钥，该端口对整个局域网开放。支持 DSH 0.1.2-rc.1 至 0.1.7-alpha.1 及以后。
 - [Lequait/dsh-glm-web](https://github.com/Lequait/dsh-glm-web) — 非官方的智谱清言（chatglm.cn）网页版 provider——用网页版登录态与积分驱动 DSH，支持流式输出与提示词桥工具调用。
 - [liaoyuqing/dsh-llm-error-retry](https://github.com/liaoyuqing/dsh-llm-error-retry) — 大模型请求重试插件：命中配置的 HTTP 状态码、机器码或 provider 返回字段=值时，按该条规则独立配置的时长休眠后自动重新请求，让订阅套餐的限额、限流报错（429 / insufficient_quota）不打断运行。
-- [liaoyuqing/model-failover-manager](https://github.com/liaoyuqing/model-failover-manager) — 为会话模型选择位提供路由分组：把分组绑定到会话后，某个模型在所有重试策略耗尽时插件会记录其失败原因与错误码、切换到组内下一个可用模型并继续本轮。分组支持模型优先级、按北京时间的生效时段与截止日；子代理继承父会话的分组，也可自行选模型或绑定自己的分组；属于 dsh-our-free-model 的模型会先换账号重试再兜底切换。
+- [liaoyuqing/model-failover-manager](https://github.com/liaoyuqing/model-failover-manager) — 模型选择弹窗＋路由分组：模型失败后自动换到组内下一个可用模型并继续本轮；另含数据看板、免费渠道页签。
 - [libre-webui/dsh-native-provider](https://github.com/libre-webui/dsh-native-provider) — 在 [Libre WebUI](https://github.com/libre-webui/libre-webui) 中使用 DSH 模型进行聊天、沙箱 Work 任务和用量统计，提供商凭据保留在 DSH 中。需要 Libre WebUI 0.37.0 或更高版本。
 - [LightingHa/dsh-cc-switch](https://github.com/LightingHa/dsh-cc-switch) — 把 cc-switch 里配好的模型供应商接进 DeepSeek Harness：读取 cc-switch 数据库，将 Claude / Codex / OpenClaw / MCode / Pi 等条目转成 llm-pi-ai 路由并写入 API Key，还提供实测首字节耗时与流能否正常收尾的体检。
 - [liqiaohuia/dsh-proxy-routes](https://github.com/liqiaohuia/dsh-proxy-routes) — 按提供商（账号）分流的 SOCKS5/HTTP 代理池。基于 API 密钥识别账号实现精准分流，支持绝对直连（无视 DSH 全局代理）与内置联网工具代理热装。配置在 DSH 设置页图形化管理，保存即热生效。
